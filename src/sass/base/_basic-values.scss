@@ -1,0 +1,73 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  color: var(--title-color);
+}
+p {
+  margin: 0;
+
+  color: var(--main-text-color);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-weight: normal;
+}
+// Контейнер
+.container {
+  @include mq(mob) {
+    padding: 0 20px;
+    max-width: 320px;
+  }
+  @include mq(tab) {
+    padding: 0 40px;
+    max-width: 768px;
+  }
+  @include mq(desk) {
+    padding: 0 183px;
+    max-width: 1680px;
+  }
+}
+
+body {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  /* or 143% */
+  letter-spacing: 0.08em;
+}
+
+// title
+.title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  /* or 26px */
+  letter-spacing: 0.03em;
+}
