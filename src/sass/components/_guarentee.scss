@@ -21,7 +21,6 @@
     color: var(--title-color);
     padding-bottom: 30px;
 
-
     @include mq(desk){
         font-size: 46px;
         line-height: calc(60/46);
@@ -33,7 +32,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 1.67;
     color: var(--secondary-text-color);
     letter-spacing: 0.03em;
     @include mq(desk){
@@ -72,7 +71,6 @@
     background-size: cover;
     z-index: 1;
 }
-
 
 .guarentee__accent{
     color: var(--accent-color);
