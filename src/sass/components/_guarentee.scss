@@ -1,0 +1,38 @@
+.guarantee--list{
+    background-color: ;
+}
+
+.guarantee__title{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 26px;
+line-height: calc(34/26);
+/* or 34px */
+
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-color);
+padding-bottom: 30px;
+}
+
+.guarantee__item{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--secondary-text-color);
+}
+
+.guarantee__item:not(:last-child){
+    padding-bottom: 20px;
+}
+
+.guarantee__list{
+    padding: 45px 20px;
+}
+
+.guarentee__accent{
+    color: var(--accent-color);
+}
