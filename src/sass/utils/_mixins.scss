@@ -1,0 +1,44 @@
+// Mixins for breakpoint
+@mixin mq($type) {
+  $mob: 320px;
+  $tab: 768px;
+  $desk: 1440px;
+
+  @if $type == mob {
+    @media screen and (min-width: $mob) {
+      @content;
+    }
+  }
+  @if $type == mob-only {
+    @media screen and (max-width: ($tab - 0.02)) {
+      @content;
+    }
+  }
+  @if $type == tab {
+    @media screen and (min-width: $tab) {
+      @content;
+    }
+  }
+  @if $type == tab-only {
+    @media screen and (min-width: $tab) and (max-width: ($desk - 0.02)) {
+      @content;
+    }
+  }
+  @if $type == desk {
+    @media screen and (min-width: $desk) {
+      @content;
+    }
+  }
+  @if $type == not-desk {
+    @media screen and (max-width: ($desk - 0.02)) {
+      @content;
+    }
+  }
+}
+
+//  CenteredFlex
+@mixin centeredFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

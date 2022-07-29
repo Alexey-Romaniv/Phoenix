@@ -1,5 +1,7 @@
-@import './common';
-@import './example';
+@import './utils/mixins';
+@import './utils/normalize';
+@import './base/basic-values';
+@import './base/variables';
 
 @import './components/header';
 @import './components/hero';
