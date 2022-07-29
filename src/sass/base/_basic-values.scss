@@ -44,7 +44,7 @@ a {
     max-width: 480px;
   }
   @include mq(tab) {
-    padding: 0 20px;
+    padding: 0 40px;
     max-width: 768px;
   }
   @include mq(desk) {
@@ -64,6 +64,10 @@ body {
 
 .section{
   padding: 35px 0;
+
+  @include mq(desk){
+    padding: 65px 0;
+  }
 }
 
 // title
