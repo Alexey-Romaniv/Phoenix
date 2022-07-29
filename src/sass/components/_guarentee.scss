@@ -1,5 +1,6 @@
 .guarantee--list{
     background-color: var(--main-background);
+    padding: 45px 20px;
 }
 
 .guarantee__title{
@@ -23,14 +24,16 @@ padding-bottom: 30px;
     font-size: 12px;
     line-height: 20px;
     color: var(--secondary-text-color);
+    border-left: 2px dashed var(--main-text-color);
 }
 
-.guarantee__item:not(:last-child){
-    padding-bottom: 20px;
-}
 
 .guarantee__list{
-    padding: 45px 20px;
+    color:green;
+}
+
+.guarantee__list:not(:last-child){
+    margin-bottom: 20px;
 }
 
 .guarentee__accent{
