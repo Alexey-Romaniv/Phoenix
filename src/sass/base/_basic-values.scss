@@ -38,17 +38,19 @@ a {
 }
 // Контейнер
 .container {
+  margin: 0 auto;
+  max-width: 320px;
   @include mq(mob) {
-    padding: 0px 20px;
     max-width: 480px;
+    padding: 0 20px;
   }
   @include mq(tab) {
-    padding: 0px 40px;
+    padding: 0 40px;
     max-width: 768px;
   }
   @include mq(desk) {
-    padding: 0px 183px;
-    max-width: 1680px;
+    padding: 0 26px;
+    max-width: 1366px;
   }
 }
 
@@ -62,6 +64,10 @@ body {
   letter-spacing: 0.08em;
 }
 
+.section {
+  padding: 35px 0;
+}
+
 // title
 .title {
   font-style: normal;
@@ -70,4 +76,17 @@ body {
   line-height: 1.3;
   /* or 26px */
   letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
