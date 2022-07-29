@@ -39,15 +39,15 @@ a {
 // Контейнер
 .container {
   @include mq(mob) {
-    padding: 0 20px;
-    max-width: 320px;
+    padding: 0px 20px;
+    max-width: 480px;
   }
   @include mq(tab) {
-    padding: 0 40px;
+    padding: 0px 40px;
     max-width: 768px;
   }
   @include mq(desk) {
-    padding: 0 183px;
+    padding: 0px 183px;
     max-width: 1680px;
   }
 }

@@ -1,0 +1,120 @@
+.howdoit {
+  @include mq(mob) {
+    margin-top: 70px;
+  }
+
+  @include mq(tab) {
+    font-size: 26px;
+  }
+
+  @include mq(desk) {
+    margin-top: 130px;
+    font-size: 46px;
+  }
+}
+
+.howdoit__title {
+  margin-bottom: 30px;
+  text-align: center;
+
+  color: var(--title-color);
+}
+
+.howdoit__list {
+  @include mq(mob) {
+    display: block;
+  }
+
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @include mq(desk) {
+    gap: 30px;
+  }
+}
+
+.howdoit__item {
+  position: relative;
+  outline: 1px solid green;
+
+  @include mq(mob only) {
+    width: 280px;
+    height: 276px;
+    margin-bottom: 15px;
+    padding: 105px 20px 30px 20px;
+  }
+
+  @include mq(tab) {
+    display: flex;
+    padding: 118px 32px 35px 32px;
+    height: 315px;
+    width: calc((100% - 1 * 20px) / 2);
+  }
+
+  @include mq(desk) {
+    width: calc((100% - 2 * 30px) / 3);
+    // height: 396px;
+    padding: 118px 28px 55px 28px;
+  }
+}
+
+.howdoit__icon {
+  position: absolute;
+  top: 30px;
+  right: 112px;
+  fill: var(--accent-color);
+
+  @include mq(tab) {
+    top: 36px;
+    right: 139px;
+  }
+}
+
+.howdoit-icon-line {
+  position: absolute;
+  top: 164px;
+  right: 130;
+
+  @include mq(tab) {
+    top: 177px;
+    right: 157px;
+  }
+}
+
+.howdoit__content {
+  position: absolute;
+  width: 240px;
+  height: 141px;
+  text-align: center;
+
+  @include mq(tab) {
+    width: 270px;
+    height: 162px;
+  }
+}
+
+.howdoit__name {
+  margin-bottom: 42px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: var(--title-color);
+}
+
+.howdoit__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: var(--main-text-color);
+}
