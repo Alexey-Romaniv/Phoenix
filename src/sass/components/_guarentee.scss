@@ -18,7 +18,6 @@
     line-height: calc(34/26);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-color);
     padding-bottom: 30px;
 
     @include mq(desk){
@@ -27,7 +26,7 @@
     }
 }
 
-.guarantee__item{
+.guarantee__text{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -37,15 +36,15 @@
     letter-spacing: 0.03em;
     @include mq(desk){
         font-size: 20px;
-        line-height: 28px;
+        line-height: 1.4;
         }
 }
-.guarantee__li{
+.guarantee__item{
     position: relative;
 }
 
-.guarantee__li:not(:last-child){
-    margin-bottom: 20px;
+.guarantee__item:not(:last-child){
+    margin-bottom: 25px;
     
 &::after{
     content: "";
@@ -59,14 +58,14 @@
 }
 }
 
-.guarantee__li::before{
+.guarantee__item::before{
     content: "";
     position: absolute;
     top: -2px;
     left: -31px;        
     width: 14px;
     height: 20px;
-    background-image: url("../images/campfire-orig.svg");
+    background-image: url("../images/guarantee/campfire-orig.svg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
