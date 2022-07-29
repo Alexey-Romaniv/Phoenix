@@ -25,6 +25,15 @@ padding-bottom: 30px;
     line-height: 20px;
     color: var(--secondary-text-color);
     border-left: 2px dashed var(--main-text-color);
+
+   &::after{
+            content: "";
+            position: absolute;
+            width: 28px;
+            height: 14px;
+            background-image: url("../../images/guarantee/campfire.svg");
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
 }
 
 
