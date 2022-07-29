@@ -39,9 +39,8 @@ a {
 // Контейнер
 .container {
   margin: 0 auto;
-  max-width: 320px;
+  padding: 0 20px;
   @include mq(mob) {
-    padding: 0 20px;
     max-width: 480px;
   }
   @include mq(tab) {
