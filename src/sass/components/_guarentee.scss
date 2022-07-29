@@ -1,20 +1,35 @@
 .guarantee--list{
-    background-color: var(--main-background);
-    padding: 45px 20px;
+    background-color: #f1f1f1;
+    padding: 45px 20px 45px 55px;
+ 
+}
+
+.guarantee--list{
+        @include mq(tab){
+            padding: 30px 64px 30px 104px;
+        }
+    @include mq(desk){
+        padding: 50px 112px 45px 164px;
+        }    
 }
 
 .guarantee__title{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 800;
-font-size: 26px;
-line-height: calc(34/26);
-/* or 34px */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: calc(34/26);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    padding-bottom: 30px;
+}
 
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--title-color);
-padding-bottom: 30px;
+.guarantee__title{
+    @include mq(desk){
+    font-size: 46px;
+    line-height: calc(60/46);
+    }
 }
 
 .guarantee__item{
@@ -24,26 +39,44 @@ padding-bottom: 30px;
     font-size: 12px;
     line-height: 20px;
     color: var(--secondary-text-color);
-    border-left: 2px dashed var(--main-text-color);
 
-   &::after{
-            content: "";
-            position: absolute;
-            width: 28px;
-            height: 14px;
-            background-image: url("./images/sprite.svg#campfire");
-            transform: matrix(-1, 0, 0, 1, 0, 0);
-    }
+    @include mq(desk){
+        font-size: 20px;
+        line-height: 28px;
+        }
 }
 
 
-.guarantee__list{
-    color:green;
-}
 
-.guarantee__list:not(:last-child){
+.guarantee__li:not(:last-child){
     margin-bottom: 20px;
+    position: relative;
+     
+&::before{
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -31px;        
+        width: 14px;
+        height: 20px;
+        background-image: url("../images/campfire-orig.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
 }
+   
+&::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    border: 1px dashed #B9B9B9;
+    top: 9px;
+    left:-24px; 
+}
+}
+
 
 .guarentee__accent{
     color: var(--accent-color);
