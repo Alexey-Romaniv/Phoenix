@@ -1,16 +1,4 @@
 .container {
-  @include mq(mob) {
-    padding: 0 20px;
-    max-width: 320px;
-  }
-  @include mq(tab) {
-    padding: 0 40px;
-    max-width: 768px;
-  }
-  @include mq(desk) {
-    padding: 0 183px;
-    max-width: 1680px;
-  }
   outline: 2px solid red;
 }
 
@@ -30,6 +18,7 @@
 }
 
 .about__title {
+  margin-bottom: 30px;
   font-weight: 800;
   font-size: 20px;
   line-height: calc(26 / 20);
@@ -46,6 +35,9 @@
   }
 }
 
+.about-img {
+  margin-bottom: 24px;
+}
 .about-content {
   @include mq(tab) {
     max-width: 403px;
@@ -61,7 +53,8 @@
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.08em;
-  display: block;
+  // display: block;
+  margin-bottom: 10px;
 
   // border-bottom: 1px solid #b9b9b9;
   // bottom: auto;
@@ -79,22 +72,23 @@
   }
 }
 
-.about-subtitle::after {
-  //   content: '';
+// .about-subtitle::after {
+//   content: '';
 
-  //   position: absolute;
-  //   height: 2px;
-  //   background-color: red;
+//   position: absolute;
+//   height: 2px;
+//   background-color: red;
 
-  //   content: '';
+//   content: '';
 
-  //   left: 0px;
-  //   width: 80px;
-  //   height: 1px;
+//   left: 0px;
+//   width: 80px;
+//   height: 1px;
 
-  border-bottom: 1px solid #b9b9b9;
-  bottom: 10px;
-}
+//   border-bottom: 1px solid #b9b9b9;
+//   bottom: 10px;
+//
+// }
 
 .about__item {
   position: relative;
@@ -117,7 +111,8 @@
 
 .about__desc {
   padding-left: 27px;
-  padding-top: 23px;
+  padding-top: 20px;
+  min-width: 280px;
 
   font-weight: 600;
   font-size: 14px;
@@ -127,7 +122,7 @@
 }
 
 .content__text {
-  margin: 14px;
+  margin: 14px 0;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(20 / 12);
@@ -141,4 +136,10 @@
 
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+.about-list {
+  border-top: 1px solid red;
+  // min-width: 100%;
+  width: 100%;
 }
