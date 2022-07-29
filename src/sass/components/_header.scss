@@ -23,17 +23,33 @@
 .header-logo__icon{
   width: 80px;
   height: 30px;
+  @include mq(tab){
+    width: 128px;
+    height: 45px;
+  }
 }
+
 .menu__list{
   display: flex;
+  gap: 40px;
 }
 
 .menu{
   display: none;
   @include mq(desk){
     display: flex;
+    margin-left: 144px;
   }
 }
+.menu__link{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
 .call-back-btn{
   display: none;
 
@@ -52,6 +68,9 @@
   @include mq(tab){
     display: block;
   }
+  @include mq(desk){
+    margin-left: 60px;
+  }
 }
 // .menu__link{
 // }
@@ -62,6 +81,9 @@
   border: none;
   background-color: transparent;
   margin-left:auto;
+  @include mq(desk){
+    display: none;
+  }
 }
 // .menu-mobile__btn-open{
   
@@ -95,6 +117,11 @@
   background: rgba(17, 21, 24, 0.9);
   transform: translateX(0);
   transition: transform var(--animation);
+
+  @include mq(desk){
+    display: none;
+  }
+
 }
 
 .menu-mobile__wrapper{
@@ -111,12 +138,12 @@
   letter-spacing: 0.03em;
 
   color:var(--white-color);
-  @include mq(mob){
-    
+  @include mq(tab){
+    font-size: 26px;
   }
 }
 
-.mobile-menu__link-active{
+.active{
   color: var(--accent-color);
 }
 
