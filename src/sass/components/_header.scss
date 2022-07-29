@@ -129,6 +129,10 @@
 }
 .mobile-menu__list{
   margin-bottom: 50px;
+  @include mq(tab){
+    max-width: 332px;
+    margin: 0 auto;
+  }
 }
 .mobile-menu__link{
   font-weight: 800;
