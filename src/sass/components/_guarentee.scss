@@ -18,11 +18,12 @@
     line-height: calc(34/26);
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 
     @include mq(desk){
         font-size: 46px;
         line-height: calc(60/46);
+        margin-bottom: 50px;
     }
 }
 
