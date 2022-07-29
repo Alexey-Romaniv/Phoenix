@@ -1,0 +1,144 @@
+.container {
+  @include mq(mob) {
+    padding: 0 20px;
+    max-width: 320px;
+  }
+  @include mq(tab) {
+    padding: 0 40px;
+    max-width: 768px;
+  }
+  @include mq(desk) {
+    padding: 0 183px;
+    max-width: 1680px;
+  }
+  outline: 2px solid red;
+}
+
+.about {
+  //   @include section;
+
+  //   @include mq(tab) {
+  //     @include section(70px, 70px);
+  //   }
+
+  //   @include mq(desk) {
+  //     @include section(130px, 129px);
+  //   }
+
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: calc(26 / 20);
+  letter-spacing: 0.03em;
+
+  @include mq(tab) {
+    color: blue;
+  }
+
+  @include mq(desk) {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: calc(60 / 46);
+  }
+}
+
+.about-content {
+  @include mq(tab) {
+    max-width: 403px;
+  }
+  @include mq(desk) {
+    max-width: 642px;
+  }
+}
+
+.about-subtitle {
+  position: relative;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.08em;
+  display: block;
+
+  // border-bottom: 1px solid #b9b9b9;
+  // bottom: auto;
+  // width: 100%;
+
+  @include mq(tab) {
+    color: blue;
+  }
+
+  @include mq(desk) {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: calc(37 / 30);
+    color: green;
+  }
+}
+
+.about-subtitle::after {
+  //   content: '';
+
+  //   position: absolute;
+  //   height: 2px;
+  //   background-color: red;
+
+  //   content: '';
+
+  //   left: 0px;
+  //   width: 80px;
+  //   height: 1px;
+
+  border-bottom: 1px solid #b9b9b9;
+  bottom: 10px;
+}
+
+.about__item {
+  position: relative;
+}
+
+.about__item::before {
+  position: absolute;
+
+  content: '';
+  display: inline-block;
+  left: 0px;
+  top: 50%;
+
+  width: 18px;
+  height: 14px;
+
+  background-image: url('../images/about/icon.svg');
+  background-size: 18px 14px;
+}
+
+.about__desc {
+  padding-left: 27px;
+  padding-top: 23px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+.content__text {
+  margin: 14px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+}
+
+.about__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.06em;
+
+  text-decoration: underline;
+  color: var(--accent-color);
+}
