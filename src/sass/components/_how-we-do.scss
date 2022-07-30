@@ -40,33 +40,27 @@
 }
 
 .howdoit__item {
-  min-width: 280px;
-  height: 296px;
   padding: 30px 20px;
-  // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+  transition: background-color var(--animation);
 
   @include mq(tab) {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100% - 1 * 20px) / 2);
-    min-width: 334px;
-    height: 315px;
+    width: calc((100% - 20px) / 2);
     padding: 35px 32px;
   }
 
   @include mq(desk) {
     flex-direction: column;
-    width: calc((100% - 2 * 30px) / 3);
-    min-width: 418px;
-    height: 396px;
+    width: calc((100% - 60px) / 3);
     padding: 35px 28px 55px 28px;
   }
 }
 
 .howdoit__item:hover,
 .howdoit__item:focus {
-  // cursor: pointer;
   background-color: var(--accent-color);
 }
 
@@ -76,6 +70,8 @@
   height: 55px;
   margin: 0 auto 20px;
   fill: var(--accent-color);
+
+  transition: fill var(--animation);
 
   @include mq(tab) {
     margin-bottom: 28px;
@@ -88,19 +84,8 @@
 }
 
 .howdoit__content {
-  width: 240px;
-  height: 160px;
   text-align: center;
-
-  @include mq(tab) {
-    width: 270px;
-    height: 162px;
-  }
-
-  @include mq(desk) {
-    width: 362px;
-    height: 223px;
-  }
+  transition: color var(--animation);
 }
 
 .howdoit__item:hover .howdoit__content,
@@ -109,9 +94,6 @@
 }
 
 .howdoit__name {
-  max-height: 40px;
-  height: 100%;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
@@ -120,7 +102,14 @@
 
   color: var(--title-color);
 
+  transition: color var(--animation);
+
+  @include mq(tab) {
+    min-height: 40px;
+  }
+
   @include mq(desk) {
+    min-height: 53px;
     font-size: 20px;
     line-height: 1.4;
   }
@@ -132,7 +121,7 @@
 }
 
 .howdoit__text {
-  margin-top: 42px;
+  margin-top: 20px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
@@ -141,6 +130,8 @@
   letter-spacing: 0.08em;
 
   color: var(--main-text-color);
+
+  transition: color var(--animation);
 
   @include mq(desk) {
     margin-top: 32px;
@@ -164,6 +155,8 @@
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  transition: background-color var(--animation);
 }
 
 .howdoit__item:hover .howdoit__text::before,
