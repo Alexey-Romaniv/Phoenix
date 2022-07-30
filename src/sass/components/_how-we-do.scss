@@ -9,7 +9,6 @@
 }
 
 .howdoit__title {
-  margin-bottom: 30px;
   text-align: center;
   color: var(--title-color);
 
@@ -40,10 +39,11 @@
 }
 
 .howdoit__item {
-  outline: 1px solid green;
+  // outline: 1px solid green;
   min-width: 280px;
   height: 296px;
   padding: 30px 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   @include mq(tab) {
     display: flex;
@@ -63,6 +63,14 @@
   }
 }
 
+.howdoit__item:hover,
+.howdoit__item:focus {
+  // cursor: pointer;
+  background-color: var(--accent-color);
+  //   fill: var(--white-color);
+  //   color: var(--white-color);
+}
+
 .howdoit__icon {
   display: block;
   width: 55px;
@@ -73,6 +81,11 @@
   @include mq(tab) {
     margin-bottom: 28px;
   }
+}
+
+.howdoit__item:hover .howdoit__icon,
+.howdoit__item:focus .howdoit__icon {
+  fill: var(--white-color);
 }
 
 .howdoit__content {
@@ -89,6 +102,11 @@
     width: 362px;
     height: 223px;
   }
+}
+
+.howdoit__item:hover .howdoit__content,
+.howdoit__item:focus .howdoit__content {
+  color: var(--white-color);
 }
 
 .howdoit__name {
@@ -108,6 +126,11 @@
   }
 }
 
+.howdoit__item:hover .howdoit__name,
+.howdoit__item:focus .howdoit__name {
+  color: var(--white-color);
+}
+
 .howdoit__text {
   margin-top: 42px;
   font-weight: 500;
@@ -125,4 +148,25 @@
     font-size: 18px;
     line-height: 1.56;
   }
+}
+
+.howdoit__item:hover .howdoit__text,
+.howdoit__item:focus .howdoit__text {
+  color: var(--white-color);
+}
+
+.howdoit__text::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--accent-color);
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.howdoit__item:hover .howdoit__text::before,
+.howdoit__item:focus .howdoit__text::before {
+  background-color: var(--white-color);
 }
