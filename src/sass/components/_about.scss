@@ -9,14 +9,11 @@
 .about-container {
   @include mq(tab) {
     display: flex;
-    justify-content: space-between;
     gap: 42px;
   }
   @include mq(desk) {
     max-width: 1235px;
-
     display: flex;
-    justify-content: space-between;
     gap: 60px;
   }
 }
@@ -37,7 +34,6 @@
   @include mq(desk) {
     margin-bottom: 50px;
 
-    font-weight: 800;
     font-size: 46px;
   }
 }
@@ -205,7 +201,7 @@
   color: var(--accent-color);
 
   @include mq(tab) {
-    display: block;
+    display: inline-block;
     margin-top: 20px;
   }
 }
