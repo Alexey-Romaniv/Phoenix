@@ -1,13 +1,13 @@
 .container {
   outline: 2px solid red;
-  margin: 0 auto;
-  max-width: 320px;
-  @include mq(mob) {
-    max-width: 480px;
-    padding: 0 20px;
-  }
+  // margin: 0 auto;
+  // max-width: 320px;
+  // @include mq(mob) {
+  //   max-width: 480px;
+  //   padding: 0 20px;
+  // }
   @include mq(tab) {
-    padding: 0 20px;
+    padding: 0 40px;
     max-width: 768px;
   }
   @include mq(desk) {
@@ -18,29 +18,40 @@
 
 .about-container {
   @include mq(tab) {
+    // max-width: 768px;
+
     display: flex;
-    gap: 42px;
-    // font-size: 26px;
-    // line-height: 1.3;
-
-    // letter-spacing: 0.03em;
-    // color: blue;
+    justify-content: space-between;
   }
-  //   @include section;
 
-  //   @include mq(tab) {
-  //     @include section(70px, 70px);
-  //   }
+  @include mq(desk) {
+    // max-width: 768px;
 
-  //   @include mq(desk) {
-  //     @include section(130px, 129px);
-  //   }
-  // max-width: 320px; // убрать
-  // padding-left: 20px;
-  // padding-right: 20px;
-  // padding-top: 70px;
-  // padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // font-size: 26px;
+  // line-height: 1.3;
+
+  // letter-spacing: 0.03em;
+  // color: blue;
 }
+//   //   @include section;
+
+//   //   @include mq(tab) {
+//   //     @include section(70px, 70px);
+//   //   }
+
+//   //   @include mq(desk) {
+//   //     @include section(130px, 129px);
+//   //   }
+//   // max-width: 320px; // убрать
+//   // padding-left: 20px;
+//   // padding-right: 20px;
+//   // padding-top: 70px;
+//   // padding-bottom: 70px;
+// }
 
 .about__title {
   margin-bottom: 30px;
@@ -52,8 +63,6 @@
   @include mq(tab) {
     font-size: 26px;
     line-height: 1.3;
-
-    letter-spacing: 0.03em;
   }
 
   @include mq(desk) {
@@ -63,16 +72,29 @@
   }
 }
 
-.about-img {
-  margin-bottom: 24px;
+.about-image {
+  // margin-bottom: 24px;
+  // @include mq(tab) {
+
+  //   height: 305px;
+  margin-right: 42px;
+  // max-width: 285px;
   @include mq(tab) {
-    width: 243px;
-    height: 305px;
+    display: flex;
+    // width: 243px;
+    object-fit: contain;
+    align-items: flex-start;
+  }
+  @include mq(desk) {
+    display: flex;
+    width: 530px;
   }
 }
+
 .about-content {
   @include mq(tab) {
-    min-width: 403px;
+    // display: flex;
+    max-width: 403px;
   }
   @include mq(desk) {
     max-width: 642px;
