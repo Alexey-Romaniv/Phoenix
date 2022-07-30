@@ -1,0 +1,54 @@
+.footer__title-down{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(28/14);
+    /* identical to box height, or 200% */
+    
+    text-align: center;
+    color: #B9B9B9;
+}
+.footer__down{
+    background-color: black;
+    height: 68px;
+    padding: 20px 68px;
+
+    @include mq(tab){
+    text-align: left;
+    padding: 20px auto;
+}
+    
+@include mq(desk){
+    height:67px
+}
+}
+
+.footer__list{
+    text-align: center;
+
+    @include mq(tab){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }    
+}
+
+.footer__icons{
+    background-color:linear-gradient(299.36deg, rgba(161, 181, 216, 0) 61.06%, rgba(144, 162, 189, 0.309804) 110.82%, rgba(124, 139, 156, 0.756863) 182.56%, #748290 221.9%);
+}
+
+.footer__tel{
+    @include mb(tab){
+        &::after{
+            border: 1px solid #B9B9B9;
+        }
+    }
+}
+.tel{
+@include centeredFlex;
+
+    @include mq(tab){
+        display: flex;
+        justify-content:end;
+        align-items: center;
+        }    
+}
