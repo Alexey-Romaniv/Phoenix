@@ -2,7 +2,7 @@
 @mixin mq($type) {
   $mob: 480px;
   $tab: 768px;
-  $desk: 1440px;
+  $desk: 1366px;
 
   @if $type == mob {
     @media screen and (min-width: $mob) {

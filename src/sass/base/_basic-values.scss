@@ -39,10 +39,9 @@ a {
 // Контейнер
 .container {
   margin: 0 auto;
-  max-width: 320px;
+  padding: 0 20px;
   @include mq(mob) {
     max-width: 480px;
-    padding: 0 20px;
   }
   @include mq(tab) {
     padding: 0 40px;
@@ -60,12 +59,15 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
-  /* or 143% */
   letter-spacing: 0.08em;
 }
 
 .section {
   padding: 35px 0;
+
+  @include mq(desk){
+    padding: 65px 0;
+  }
 }
 
 // title
@@ -89,4 +91,7 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.active{
+  color: var(--accent-color);
 }
