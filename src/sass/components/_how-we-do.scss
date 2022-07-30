@@ -40,7 +40,6 @@
 }
 
 .howdoit__item {
-  // outline: 1px solid green;
   min-width: 280px;
   height: 296px;
   padding: 30px 20px;
@@ -69,8 +68,6 @@
 .howdoit__item:focus {
   // cursor: pointer;
   background-color: var(--accent-color);
-  //   fill: var(--white-color);
-  //   color: var(--white-color);
 }
 
 .howdoit__icon {
@@ -112,7 +109,6 @@
 }
 
 .howdoit__name {
-  // margin-bottom: 42px;
   max-height: 40px;
   height: 100%;
 
