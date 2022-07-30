@@ -43,6 +43,10 @@
 .guarantee__item:not(:last-child){
     margin-bottom: 25px;
     
+    @include mq(tab){
+        margin-bottom: 20px;
+    }
+
 &::after{
     content: "";
     display: block;
