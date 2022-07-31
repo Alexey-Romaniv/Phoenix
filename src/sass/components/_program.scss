@@ -1,0 +1,193 @@
+.program {
+    position: relative;
+    background-color: var(--title-color);
+    
+    @include mq(desk){   
+        background-image: linear-gradient(var(--white-color), var(--white-color));
+        background-size: 100% 3px;
+        background-position: 0 161px;
+        background-repeat: no-repeat;
+    }
+
+    // z-index: -2;
+    @include mq(tab) {
+        padding-bottom: 97px;
+    }
+
+    &-title {
+        color: var(--white-color);
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 30px;
+
+        @include mq(desk) {
+            text-align: left;
+            font-size: 46px;
+            line-height: 1.3;
+            margin-bottom: 106px;
+            
+        }
+    }
+}
+
+.program__img {     
+                @media screen and (min-width: 200px) {
+                    width: 120px;
+                    position: absolute;
+                    bottom: -55px;
+                    right: 0;
+                }
+        
+                @include mq(tab) {
+                    width: 374px;
+                    position: absolute;
+                    bottom: -66px;
+                    right: -44px;
+                }
+        
+                @include mq(desk) {
+                    width: 672px;
+                    position: absolute;
+                    bottom: -344px;
+                    left: -184px;
+                    z-index: 1;
+                }
+            }
+
+
+.program-list {
+    
+
+
+    position: relative;
+    @include mq(desk) {
+        display: flex;
+    }
+    @media screen and (max-width: 1365px) {
+        &__item {
+            margin-left: 74px;
+            border-left: 3px solid var(--white-color);
+            padding-left: 26px;
+            padding-bottom: 44px;
+
+            @media screen and (min-width: 1366px) {
+                position: relative;
+            }
+        }
+    }
+
+    &__border {
+        border-left: 3px solid transparent;
+    }
+
+    &__flex {
+        @media screen and (max-width: 1365px) {
+            position: relative;
+        }
+
+    }
+
+    @media screen and (max-width: 1365px) {
+        &__title::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            transform: translateX(-50%);
+            left: -28px;
+            top: -7px;
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+        &__title::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: auto;
+            left: auto;
+            transform: translateY(-500%);
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+
+
+
+        }
+    }
+
+    &:nth-last-child(1) {
+        border-left: 3px solid transparent;
+
+    }
+
+    &__title {
+        color: var(--white-color);
+        text-transform: uppercase;
+        line-height: 0;
+        margin-bottom: 15px;
+
+        @include mq(desk) {
+            font-size: 30px;
+            line-height: calc(28/30);
+            letter-spacing: 0.08em;
+        }
+
+
+    }
+
+    &__headline {
+        color: var(--accent-color);
+        font-size: 12px;
+        line-height: calc(20/12);
+        margin-bottom: 8px;
+        margin-top: 5px;
+
+        @include mq(desk) {
+            font-size: 20px;
+            line-height: 1.65;
+            margin-top: 25px;
+        }
+    }
+
+    &__text {
+        color: var(--main-text-color);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(20/12);
+        opacity: 0.5;
+        margin-right: 44px;
+
+        @include mq(tab) {
+            width: 150px;
+        }
+
+        @include mq(desk) {
+            width: 226px;
+            font-size: 18px;
+            line-height: 1.56;
+        }
+    }
+
+    &__tab {
+
+        @include mq(desk) {
+            margin-left: 0;
+        }
+    }
+
+}
+
+.flex {
+    @include mq(tab) {
+        display: flex;
+    }
+
+    @include mq(desk) {
+        display: block;
+    }
+}
