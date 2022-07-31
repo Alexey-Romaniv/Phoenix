@@ -203,9 +203,11 @@
 
 // базовые стили кнопки переписать
 .btn {
-  //   margin-bottom: 55px;
+  margin-top: 55px;
+  //   display: inline-flex;
+  //   align-items: center;
   height: 48px;
-  min-width: 260px;
+  width: 260px;
   font-family: inherit;
   font-weight: 700;
   font-size: 12px;

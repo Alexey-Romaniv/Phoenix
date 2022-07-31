@@ -17,8 +17,9 @@
                     class="contacts-form-input"
                     name="user-name"
                     type="text"
-                    required
-                    minlength="2"
+                  
+                   required pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+
                     placeholder="name"
                   />
                   <span class="contacts-form-label">Имя&ast;</span>
@@ -26,7 +27,7 @@
                     <use class="icon-check" href="./img/sprite.svg#icon-check"></use>
                     <use class="icon-alert" href="./img/sprite.svg#icon-alert"></use>
                   </svg> -->
-                  <!-- <span class="message-alert">Minimum two characters</span> -->
+                  <span class="message-alert">Minimum two characters</span>
                 </label>
                 <label class="contacts-form-field">
                   <input
