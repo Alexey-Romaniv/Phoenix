@@ -65,7 +65,7 @@ body {
 .section {
   padding: 35px 0;
 
-  @include mq(desk){
+  @include mq(desk) {
     padding: 65px 0;
   }
 }
@@ -92,6 +92,6 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-.active{
+.active {
   color: var(--accent-color);
 }
