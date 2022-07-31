@@ -180,12 +180,12 @@
   letter-spacing: 0.06em;
   display: inline-block;
   text-decoration: underline;
-  text-underline-position: under;
+  // text-underline-position: under;
   color: var(--accent-color);
 
-  @include mq(tab) {
-    display: inline-block;
-    // margin-top: 20px;
+  @include mq(desk) {
+    font-size: 18px;
+    line-height: calc(28 / 18);
   }
 }
 
