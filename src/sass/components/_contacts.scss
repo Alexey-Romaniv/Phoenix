@@ -1,0 +1,64 @@
+.contacts {
+  //   @extend %section;
+
+  max-width: 1366px; // узнать
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--secondary-background);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  // mobile screen
+  background-image: url(../images/contacts/registration-bg_sm.png);
+
+  // mobile retina screen
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/contacts/registration-bg_sm@2x.png);
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/contacts/registration-bg_md.png);
+    // tablet retina screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/registration-bg_md@2x.png);
+    }
+  }
+
+  // desktop screen
+  @media screen and (min-width: 1366px) {
+    background-image: url(../images/contacts/registration-bg_lg.png);
+    // desktop retina screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/registration-bg_lg@2x.png);
+    }
+  }
+
+  //   @include mq(retina) {
+  //     background-image: url(../img/price/price-bg_sm@2x.png);
+  //   }
+
+  //   @include mq(tab) {
+  //     background-image: url(../img/price/price-bg_md.png);
+
+  //     @include mq(retina) {
+  //       background-image: url(../img/price/price-bg_md@2x.png);
+  //     }
+  //   }
+
+  //   @include mq(desk) {
+  //     background-image: url(../img/price/price-bg_lg.png);
+
+  //     @include mq(retina) {
+  //       background-image: url(../img/price/price-bg_lg@2x.png);
+  //     }
+  //   }
+}
