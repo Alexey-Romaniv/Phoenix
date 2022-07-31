@@ -1,5 +1,9 @@
 .advant{
-  padding-bottom: 130px;
+  padding-bottom: 70px;
+
+  @include mq(desk) {
+    padding-bottom: 130px;
+  }
 }
 
 .advant__list {
