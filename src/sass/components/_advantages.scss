@@ -1,15 +1,3 @@
-// .advant__content {
-//   padding: 70px 53px;
-
-//   @include mq(tab) {
-//     padding: 41px 45px 70px 41px;
-//   }
-
-//   @include mq(desk) {
-//     padding: 100px 183px 130px 184px;
-//   }
-// }
-
 .advant__list {
   @include mq(tab) {
     display: flex;
