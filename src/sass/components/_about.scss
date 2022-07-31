@@ -1,7 +1,3 @@
-.about {
-  // min-width: 1235px;
-}
-
 .about-container {
   @include mq(tab) {
     display: flex;
@@ -30,20 +26,6 @@
     font-size: 46px;
   }
 }
-
-// .about-image {
-//   @include mq(tab) {
-//     display: flex;
-//     object-fit: contain;
-//     align-items: flex-start;
-//   }
-//   @include mq(desk) {
-//     margin-right: 0;
-//     display: flex;
-//     width: 530px;
-//     align-items: flex-start;
-//   }
-// }
 
 .about-content {
   @include mq(tab) {
@@ -166,12 +148,6 @@
     margin-bottom: 28px;
   }
 }
-
-// .content__text:nth-last-child {
-//   @include mq(desk) {
-//     margin-bottom: 28px 0;
-//   }
-//}
 
 .about__link {
   font-weight: 500;
