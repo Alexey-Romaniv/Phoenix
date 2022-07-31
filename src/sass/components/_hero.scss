@@ -11,7 +11,7 @@
     @include mq(tab) {
         padding-top: 158px;
         background-image:
-            url(../../images/hero/wave-tablet.png);
+            url(../images/hero/wave-tablet.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 
     @include mq(desk) {
         background-image:
-            url(../../images/hero/wave-desktop.png);
+            url(../images/hero/wave-desktop.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -99,7 +99,7 @@
         font-size: 12px;
         line-height: calc(15/12);
         width: calc(100% - 2 * 10px);
-        margin: 50px 10px 299px;
+        margin: 50px 10px 54px;
 
         color: var(--white-color);
         background-color: var(--accent-color);
@@ -125,11 +125,7 @@
 
         @media screen and (min-width: 200px) {
             width: 208px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            position: absolute;
-            top: 277px;
+            margin: 0 auto 67px;
         }
 
         @include mq(tab) {
