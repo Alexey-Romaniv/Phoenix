@@ -1,0 +1,111 @@
+// .advant__content {
+//   padding: 70px 53px;
+
+//   @include mq(tab) {
+//     padding: 41px 45px 70px 41px;
+//   }
+
+//   @include mq(desk) {
+//     padding: 100px 183px 130px 184px;
+//   }
+// }
+
+.advant__list {
+  @include mq(tab) {
+    display: flex;
+    gap: 31px;
+  }
+}
+
+.advant__item {
+  display: flex;
+  align-items: center;
+  max-width: 215px;
+  margin: 0 auto;
+
+  line-height: 1.65;
+  letter-spacing: 0.08em;
+
+  color: var(--title-color);
+
+  @include mq(tab) {
+    margin: 0;
+  }
+
+  @include mq(desk) {
+    max-width: 417px;
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+.advant__item--icon1::before {
+  content: '';
+  background-image: url('../images/advantages/advant1.svg');
+  background-repeat: no-repeat;
+  width: 62px;
+  height: 62px;
+  margin-right: 8px;
+  flex-shrink: 0;
+
+  @include mq(tab) {
+    margin-right: 11px;
+  }
+
+  @include mq(desk) {
+    background-size: contain;
+    margin-right: -15px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.advant__item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @include mq(tab) {
+    margin-bottom: 0;
+  }
+}
+
+.advant__item--icon2::before {
+  content: '';
+  background-image: url('../images/advantages/advant2.svg');
+  background-repeat: no-repeat;
+  width: 62px;
+  height: 62px;
+  margin-right: 8px;
+  flex-shrink: 0;
+
+  @include mq(tab) {
+    margin-right: 11px;
+  }
+
+  @include mq(desk) {
+    background-size: contain;
+    margin-right: -15px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.advant__item--icon3::before {
+  content: '';
+  background-image: url('../images/advantages/advant3.svg');
+  background-repeat: no-repeat;
+  width: 62px;
+  height: 62px;
+  margin-right: 8px;
+  flex-shrink: 0;
+
+  @include mq(tab) {
+    margin-right: 11px;
+  }
+
+  @include mq(desk) {
+    background-size: contain;
+    margin-right: -15px;
+    width: 100px;
+    height: 100px;
+  }
+}
