@@ -1,0 +1,77 @@
+.guarantee__list{
+    background-color: #f1f1f1;
+    padding: 45px 20px 45px 55px;
+ 
+    @include mq(tab){
+            padding: 30px 64px 30px 104px;
+        }
+    @include mq(desk){
+        padding: 50px 112px 45px 164px;
+        }    
+}
+
+.guarantee__title{
+    font-weight: 800;
+    font-size: 26px;
+    line-height: calc(34/26);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+
+    @include mq(desk){
+        font-size: 46px;
+        line-height: calc(60/46);
+        margin-bottom: 50px;
+    }
+}
+
+.guarantee__text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.03em;
+    @include mq(desk){
+        font-size: 20px;
+        line-height: 1.4;
+        }
+}
+.guarantee__item{
+    position: relative;
+}
+
+.guarantee__item:not(:last-child){
+    margin-bottom: 25px;
+    
+    @include mq(tab){
+    margin-bottom: 20px;
+    }
+
+&::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 70%;
+    width: 1px;
+    border: 1px dashed #B9B9B9;
+    top: 24px;
+    left:-24px; 
+}
+}
+
+.guarantee__item::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -31px;        
+    width: 14px;
+    height: 20px;
+    background-image: url("../images/guarantee/campfire-orig.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.guarentee__accent{
+    color: var(--accent-color);
+}
