@@ -34,7 +34,7 @@ button {
 
 a {
   text-decoration: none;
-  font-weight: normal;
+  font-style: normal;
 }
 // Контейнер
 .container {
@@ -54,7 +54,7 @@ a {
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -62,7 +62,7 @@ body {
   letter-spacing: 0.08em;
 }
 
-.section{
+.section {
   padding: 35px 0;
 
   @include mq(desk){
