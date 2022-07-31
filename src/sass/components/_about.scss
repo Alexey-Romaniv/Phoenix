@@ -99,30 +99,7 @@
       width: 25px;
       height: 20px;
 
-      top: 55%;
-
-      background-image: url('../images/about/icons/icon_lg.svg');
-      background-size: 25px 20px;
-    }
-  }
-
-  &:last-child::before {
-    position: absolute;
-
-    content: '';
-    display: inline-block;
-    left: 0px;
-    top: 10%;
-
-    width: 18px;
-    height: 14px;
-
-    background-image: url('../images/about/icons/icon.svg');
-    background-size: 18px 14px;
-
-    @include mq(desk) {
-      width: 25px;
-      height: 20px;
+      top: 10%;
 
       background-image: url('../images/about/icons/icon_lg.svg');
       background-size: 25px 20px;
