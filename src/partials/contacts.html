@@ -1,5 +1,48 @@
 <section class="contacts">
-  <h2 class="contacts-title">
-    <p class="contacts-text"></p>
-  </h2>
+  <div class="container">
+    <h2 class="contacts-title">
+      Registration for a <span class="active">free</span> phone
+      <span class="active">consultation</span> on the nuances of English UPE
+      <!-- <span class="uppercase">UPE</span> -->
+    </h2>
+    <p class="contacts-text">
+      Leave a request for participation in a
+      <span class="active">free lesson</span>. A consultant will contact you and
+      answer your questions
+    </p>
+      <form class="contacts-form" name="contact-form">
+          <div class="contacts-form-group">
+            <label class="contacts-form-field">
+                  <input
+                    class="contacts-form-input"
+                    name="user-name"
+                    type="text"
+                    required
+                    minlength="2"
+                    placeholder="Antony Black"
+                  />
+                  <span class="contacts-form-label">name&ast;</span>
+                  <!-- <svg class="contacts-form-icon" width="20" height="20">
+                    <use class="icon-check" href="./img/sprite.svg#icon-check"></use>
+                    <use class="icon-alert" href="./img/sprite.svg#icon-alert"></use>
+                  </svg> -->
+                  <span class="message-alert">Minimum two characters</span>
+                </label>
+                <label class="contacts-form-field">
+                  <input
+                    class="contacts-form-input"
+                    name="user-phone"
+                    type="tel"
+                    id="user-phone"
+                    required
+                    placeholder="+38 (099) 123-45-67"
+                  />
+                  <span class="contacts-form-label">phone&ast;</span>
+                </label>
+
+                 <button class="btn contacts-form-btn" type="submit">I want a free lesson</button>
+            </form>
+              </div>
+
+  </div>
 </section>
