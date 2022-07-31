@@ -1,3 +1,7 @@
+.advant{
+  padding-bottom: 130px;
+}
+
 .advant__list {
   @include mq(tab) {
     display: flex;
