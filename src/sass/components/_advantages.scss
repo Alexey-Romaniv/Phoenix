@@ -33,6 +33,7 @@
   }
 
   @include mq(desk) {
+    padding-right: 19px;
     max-width: 417px;
     width: 100%;
     font-size: 20px;
@@ -53,10 +54,10 @@
   }
 
   @include mq(desk) {
-    background-size: contain;
-    margin-right: -15px;
-    width: 100px;
-    height: 100px;
+    background-image: url('../images/advantages/advant-lg1.svg');
+    margin-right: -18px;
+    width: 102px;
+    height: 102px;
   }
 }
 
@@ -82,10 +83,10 @@
   }
 
   @include mq(desk) {
-    background-size: contain;
-    margin-right: -15px;
-    width: 100px;
-    height: 100px;
+    background-image: url('../images/advantages/advant-lg2.svg');
+    margin-right: -18px;
+    width: 102px;
+    height: 102px;
   }
 }
 
@@ -103,9 +104,9 @@
   }
 
   @include mq(desk) {
-    background-size: contain;
-    margin-right: -15px;
-    width: 100px;
-    height: 100px;
+    background-image: url('../images/advantages/advant-lg3.svg');
+    margin-right: -18px;
+    width: 102px;
+    height: 102px;
   }
 }
