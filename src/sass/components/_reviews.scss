@@ -2,9 +2,18 @@
 .reviews__title{
     text-align: center;
     margin-bottom: 23px;
-}
-.reviews__slider-big{
-    margin-bottom: 52px;
+    font-size: 20px;
+    line-height: calc(26 / 20);
+    @include mq(tab){
+        font-size: 25px;
+        line-height: calc(34 / 25);
+        margin-bottom: 50px;
+    }
+    @include mq(desk){
+        font-size: 46px;
+        line-height: calc(60 / 46);
+    }
+
 }
 
 .slider__item{
@@ -55,6 +64,14 @@
     color: var(--accent-color);
 
     margin-bottom: 20px;
+    @include mq(tab){
+        font-size: 20px;
+        line-height: calc(24 / 20);
+    }
+    @include mq(desk){
+        font-size: 30px;
+        line-height: calc(37 / 30);
+    }
 }
 
 .item__feedback-author-education{
@@ -65,6 +82,10 @@
     color: var(--main-text-color);
 
     margin-bottom: 16px;
+    @include mq(desk){
+        font-size: 14px;
+    line-height: calc(18 / 14);
+    }
 }
 
 .item__feedback-author-text{
@@ -126,6 +147,7 @@
 //--------------------  big slider ---------------------------
 .reviews__slider-big{
     position: relative;
+    margin-bottom: 52px;
     @include mq(tab){
         padding: 0 13px;
         }
@@ -136,7 +158,9 @@
 
 .reviews__slider-big .slick-list{
     overflow: hidden;
+    @include mq(tab){
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    }
 }
 
 .reviews__slider-big .slick-track{
