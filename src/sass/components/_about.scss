@@ -4,7 +4,7 @@
     gap: 42px;
   }
   @include mq(desk) {
-    // max-width: 1235px;
+    max-width: 1235px;
     display: flex;
     gap: 60px;
   }
@@ -37,14 +37,14 @@
 }
 
 .about-subtitle {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   margin-top: 20px;
 
   font-weight: 800;
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.08em;
-  padding-bottom: 10px;
+
   color: var(--title-color);
 
   @include mq(tab) {
@@ -53,7 +53,7 @@
 
   @include mq(desk) {
     margin-top: 0;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 
     font-size: 30px;
     line-height: calc(37 / 30);
@@ -168,16 +168,16 @@
 .about-list {
   border-top: 1px solid var(--main-text-color);
   padding-top: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   @include mq(tab) {
     padding-top: 20px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   @include mq(desk) {
     padding-top: 30px;
-    padding-bottom: 43px;
+    margin-bottom: 43px;
   }
 }
 
