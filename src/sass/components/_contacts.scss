@@ -79,9 +79,6 @@
   .contacts-form-group {
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // align-items: stretch; //проверить надо ли
-
     gap: 20px;
 
     // margin-bottom: 50px;
@@ -91,64 +88,29 @@
     position: relative;
   }
 
-  //   .contacts-form-field:first-child {
-  //     flex-basis: 270px;
-  //   }
-  //   .contacts-form-field:last-child {
-  //     flex-basis: 260px;
-  //   }
-
   .contacts-form-input {
     width: 100%;
     height: 48px;
-    //   padding-right: 25px;
+    padding-left: 28px;
+    padding-right: 20px;
 
     font-weight: 600;
     font-size: 14px;
     line-height: calc(17 / 14);
     letter-spacing: 0.08em;
-    color: (--white-color);
+    color: var(--white-color);
     background-color: transparent;
     border: 1px solid var(--white-color);
 
     outline: transparent;
-    // transition: border-color var(--animation);
+    transition: border-color var(--animation); //which color of border
   }
 }
 
-// .contacts-form-field {
-//   position: relative;
-// }
-
-// это разные поля инпуты
-// .contacts-form-field:first-child {
-//   flex-basis: 270px;
-// }
-// .contacts-form-field:last-child {
-//   flex-basis: 260px;
-// }
-
-// .contacts-form-input {
-//   width: 100%;
-//   height: 24px;
-//   padding-right: 25px;
-
-//   font-weight: 600;
-//   font-size: 11px;
-//   line-height: calc(15 / 11);
-//   letter-spacing: 0.1em;
-//   color: #ffffff;
-//   background-color: transparent;
-//   border: none;
-//   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-//   outline: transparent;
-//   transition: border-color var(--anim-fast);
-// }
-
-// .contacts-form-input:focus,
-// .contacts-form-input:not(:placeholder-shown) {
-//   border-color: #ffffff;
-// }
+.contacts-form-input:focus,
+.contacts-form-input:not(:placeholder-shown) l {
+  border-color: green; // which?
+}
 
 // .contacts-form-input:required:focus:valid:not(:placeholder-shown),
 // .contacts-form-input:required:valid:not(:placeholder-shown) {
@@ -159,21 +121,20 @@
 //   border-color: rgb(255, 230, 0);
 // }
 
-// .contacts-form-input::placeholder {
-//   opacity: 0;
-//   transition: opacity var(--anim-fast) 50ms;
-// }
+.contacts-form-input::placeholder {
+  opacity: 1;
+  transition: opacity var(--animation) 50ms;
+}
 
-// .contacts-form-input:focus::placeholder {
-//   opacity: 1;
-// }
+.contacts-form-input:focus::placeholder {
+  opacity: 1;
+}
 
 .contacts-form-label {
   position: absolute;
-  top: 10%; // отпозиционировать или флксом
-  left: 0;
-  //    display: flex; // взято с фигмы
-  //   align-items: center;
+
+  top: 25%;
+  left: 28px;
 
   font-weight: 600;
   font-size: 14px;
@@ -182,27 +143,18 @@
 
   color: var(--white-color);
 
-  //   transition: color var(--anim-fast), transform var(--anim-fast);
-  //   transform-origin: top left;
+  transition: color var(--animation);
+  transform: var(--animation);
+  //   transform-origin: top left; // или убирать наверх совсем слева прямо по краю инпута и не уменьшая буквы
 }
 
-// .contacts-form-input:focus + .contacts-form-label,
-// .contacts-form-input:not(:placeholder-shown) + .contacts-form-label {
-//   color: #fff;
-//   transform: translateY(-15px) scale(0.7);
-// }
+.contacts-form-input:focus + .contacts-form-label,
+.contacts-form-input:not(:placeholder-shown) + .contacts-form-label {
+  //   border-color: green; // which?
+  //   color: red;
+  transform: translateY(-31px) translateX(-28px) scale(0.9);
+}
 
-// .contacts-form-icon {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-// }
-
-// .icon-check {
-//   opacity: 0;
-//   fill: rgb(0, 109, 0);
-//   transition: opacity var(--anim-fast);
-// }
 // .icon-alert {
 //   opacity: 0;
 //   fill: rgb(255, 230, 0);
