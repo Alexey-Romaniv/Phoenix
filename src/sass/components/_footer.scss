@@ -1,27 +1,34 @@
-.footer__list{
-    text-align: center;
+.footer__container{
+    padding: 24px 61px 30px 60px;
 
+@include mq(tab){
+        padding: 50px 40px 40px;
+        display: flex;
+}
+}
+
+.footer__container-tel{
     @include mq(tab){
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }    
+         display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }     
 }
 
 .footer__logo-svg{
-    margin-top: 29px;
-}
+    width:80px;
+    height:24px;
 
-.footer__tel{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     
-    @include mq(tab){
-        display: flex;
-        justify-content:center;
-        align-items: center;
-    }    
+
+@include mq(tab){
+        width: 128px;
+        height: 46px;
+        margin: 0 216px 0 0;
+        
+    }
 }
 
 .footer__text{
@@ -31,60 +38,105 @@
     letter-spacing: 0.08em;
     
     color: #111518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+
+    @include mq(tab){
+        margin-top: 0px;
     }
 
-.footer__tel-svg{
-    margin-top: 23px;
-    fill:#FF6B09;
 }
 
-// .footer__tel{
-//     @include mb(tab){
-//         &::after{
-//             border: 1px solid #B9B9B9;
-//         }
-//     }
-// }
+.footer__tel-svg{
+    fill:#FF6B09;
+    width:20px; 
+    height:20px;
+    margin-right: 10px;
 
+    @include mq(tab){
+        width:24px; 
+        height:24px;
+        margin-right: 20px;
+    }
+    
+}
 
-.footer__insta{
-    margin: 32px 0;
+.number-tel{
+    width: 169px;
+    height: 17px;
+    
+    @include mq(tab){
+        font-weight: 600;
+        font-size: 20px;
+        line-height: calc(24/20);
+        letter-spacing: 0.08em;
+
+        // width:161px; 
+        // height:24px;
+        margin-right: 40px;
+    }
 }
 
 .footer__insta-pic{
-    margin-left: auto;
-    margin-right: auto;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 32px;
 
-    @include mb(tab){
+    @include mq(tab){
+        margin-top: 0px;
+    }
+}
+
+// .footer__insta-pic{
+  
+// }
+
+.footer__down{
+    height: 68px;
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: black;
+
+@include mq(tab){
+    margin-top: 0;
+    padding-left: 40px;
+}
+    
+@include mq(desk){
+    height:67px;
+    padding-left: 183px;
+}
+}
+.footer__link{
+    display: flex;
+    @include mq(tab){
         &::after{
-          border-right: 1px solid #B9B9B9;
+            display: flex;
+            content: "";
+            position: relative;
+            width: 1px;
+            height: 40px;
+            background-color: #B9B9B9;
+            top: 0;
+            right: 60px;
+            margin: 0;
         }
     }
 }
 
-.footer__down{
-    background-color: black;
-    height: 68px;
-    margin-top: 20px;
-
-    @include mq(tab){
-    text-align: left;
-    margin-left: 40px;
-}
-    
-    @include mq(desk){
-    height:67px;
-    margin-left: 183px;
-    }
-}
 
 .footer__title-down{
     font-weight: 500;
     font-size: 14px;
     line-height: calc(28/14);
-    /* identical to box height, or 200% */
     
     color: #B9B9B9;
-    padding: 20px 0;
     text-align: center;
+
+    @include mq(tab){
+        text-align: left;
+    }
 }
