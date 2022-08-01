@@ -181,8 +181,8 @@
 }
 
 .contacts-form-input::placeholder {
-  opacity: 0;
-  transition: opacity var(--animation);
+  opacity: 1;
+  transition: opacity var(--animation) 50ms;
 }
 
 .contacts-form-input:focus::placeholder {
@@ -202,9 +202,8 @@
 
   color: var(--white-color);
 
-  transition: var(--animation);
+  transition: color var(--animation);
   transform: var(--animation);
-  transform-origin: top left;
 
   @include mq(tab) {
     top: 30%;
@@ -221,33 +220,20 @@
 .contacts-form-input:focus + .contacts-form-label,
 .contacts-form-input:not(:placeholder-shown) + .contacts-form-label {
   transform: translateY(-31px) translateX(-28px) scale(0.9);
-  transition: transform (--animation);
 
   @include mq(desk) {
     transform: translateY(-48px) translateX(-40px) scale(0.9);
   }
 }
 
-.contacts-form-input:valid {
-  border-color: #008000;
-}
-
-.contacts-form-input:invalid:focus:not(:placeholder-shown) {
-  border-color: #ff0000;
-}
-
 // базовые стили кнопки переписать
 .contacts-form-btn {
+  display: block;
   margin-right: auto;
   margin-left: auto;
-  padding: 0;
 
   height: 48px;
-  max-width: 260px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 260px;
 
   font-family: inherit;
   font-weight: 700;
@@ -261,19 +247,18 @@
   background-color: var(--accent-color);
 
   @include mq(desk) {
-    height: 48px;
-    max-width: 260px;
-  }
-
-  @include mq(desk) {
     height: 70px;
-    min-width: 354px;
+    width: 354px;
 
+    font-family: inherit;
     font-size: 14px;
     line-height: calc(17 / 14);
     letter-spacing: 0.14em;
   }
 }
+<<<<<<< Updated upstream
 .contacts-form-btn::before {
   box-shadow: rgba(255, 107, 9, 0.7);
 }
+=======
+>>>>>>> Stashed changes
