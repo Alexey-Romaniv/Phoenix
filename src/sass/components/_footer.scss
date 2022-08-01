@@ -1,0 +1,156 @@
+.footer__container{
+    padding-top: 24px;
+    padding-bottom: 30px;
+    @include mq(tab){
+        padding-top: 50px;
+        padding-bottom: 40px;
+        display: flex;
+    }
+    @include mq(desk){
+        padding-top: 52px;
+        padding-bottom: 53px;
+    }
+}
+
+.footer__logo-svg{
+    width:80px;
+    height:24px;
+
+    display: flex;
+    margin: 0 auto;
+    
+@include mq(tab){
+        width: 128px;
+        height: 46px;
+        margin:0;
+    }
+
+    @include mq(desk){
+        width:128px; 
+        height:45px;
+    }
+}
+
+.footer__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17/14);
+    letter-spacing: 0.08em;
+    
+    color: #111518;
+    margin-top: 22px;
+
+    @include mq(tab){
+        margin-top: 0px;
+        margin-left: auto;
+
+        font-size: 20px;
+        line-height: calc(24/20);
+    }
+    
+    @include mq(desk){
+    font-size: 30px;
+    line-height: calc(37/30);
+    margin-left: 295px;
+    }
+
+    &:focus .footer__tel-svg,
+    &:hover .footer__tel-svg{
+        transform: scale(1.2);
+    }
+    &:focus .footer--tel,
+    &:hover .footer--tel{
+        color: var(--accent-color);
+    }
+}
+
+.footer__tel-svg{
+    fill:#FF6B09;
+    width:20px; 
+    height:20px;
+    margin-right: 10px;
+    transform: scale(1);
+    transition: transform var(--animation);
+
+    @include mq(tab){
+        width:24px; 
+        height:24px;
+        margin-right: 20px;
+    }
+    @include mq(desk){
+        width:30px; 
+        height:30px;
+        margin-right: 56px;
+    } 
+}
+
+.footer--tel{
+    transition: color var(--animation);
+
+    @include mq(tab){
+        font-weight: 600;
+        font-size: 20px;
+        line-height: calc(24/20);
+        letter-spacing: 0.08em;
+        margin-right: 40px;
+    }
+}
+
+.footer__insta-pic{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 32px;
+
+    @include mq(tab){
+        margin-top: 0px;
+    }
+}
+
+.footer__down{
+    height: 68px;
+    padding: 20px 0;
+    background-color: black;
+
+@include mq(tab){
+    margin-top: 0;
+}
+    
+@include mq(desk){
+    height:67px;
+}
+}
+.footer__link{
+    display: flex;
+    @include mq(tab){
+        &::before{
+            display: flex;
+            content: "";
+            position: relative;
+            width: 1px;
+            height: 40px;
+            background-color: #B9B9B9;
+            top: 0;
+            right: 20px;
+            margin: 0;
+        }
+    }
+}
+
+
+.footer__title-down{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(28/14);
+    
+    color: #B9B9B9;
+    text-align: center;
+
+    @include mq(tab){
+        text-align: left;
+    }
+}
