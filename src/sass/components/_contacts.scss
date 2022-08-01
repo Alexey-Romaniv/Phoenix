@@ -202,8 +202,8 @@
 
   color: var(--white-color);
 
-  transition: 250ms var(--animation);
-  transform: 250ms var(--animation);
+  transition: var(--animation);
+  transform: var(--animation);
   transform-origin: top left;
 
   @include mq(tab) {
@@ -225,6 +225,14 @@
   @include mq(desk) {
     transform: translateY(-48px) translateX(-40px) scale(0.9);
   }
+}
+
+.contacts-form-input:valid {
+  border-color: green;
+}
+
+.contacts-form-input:invalid:focus:not(:placeholder-shown) {
+  border-color: red;
 }
 
 // базовые стили кнопки переписать
@@ -256,4 +264,15 @@
     line-height: calc(17 / 14);
     letter-spacing: 0.14em;
   }
+}
+.contacts-form-btn::before {
+  box-shadow: rgba(255, 107, 9, 0.7);
+}
+
+.contacts-form-input:valid {
+  border-color: green;
+}
+
+.contacts-form-input:invalid:focus:not(:placeholder-shown) {
+  border-color: red;
 }
