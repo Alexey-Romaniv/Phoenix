@@ -1,6 +1,5 @@
 .hero {
 
-
     &-position {
         position: relative;
     }
@@ -41,13 +40,12 @@
 
 
         @include mq(tab) {
-            margin-right: 402px;
-            margin-top: 4px;
+            width: 320px;
         }
 
         @include mq(desk) {
             font-size: 58px;
-            margin-right: 819px;
+            width: 530px;
         }
 
     }
@@ -104,20 +102,17 @@
         height: 48px;
         margin: 50px 10px 54px;
         font-weight: 700;
+        display: block;
 
         color: var(--white-color);
         background-color: var(--accent-color);
         text-transform: uppercase;
-        border: solid rgba(0, 0, 0, 0);
+
+        border: none;
 
         &:hover,
         &:focus {
-            background-color: #D35F12;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            transition-duration: 300ms
-        }
-        &:visited {
-            background-color: red;
+            background-color: rgba(183, 88, 25, 0.7)
         }
 
         @include mq(mob) {
@@ -126,7 +121,9 @@
             }
 
         @include mq(tab) {
-            margin: 45px 446px 124px 0;
+            margin-top: 45px;
+            margin-bottom: 129px;
+            margin-left: 0;
             width: 260px;
             height: 48px;
         }
@@ -142,6 +139,7 @@
 
         @media screen and (min-width: 200px) {
             width: 208px;
+            max-width: none;
             margin: 0 auto;
         }
 
@@ -153,7 +151,7 @@
         }
 
         @include mq(desk) {
-            width: 754px;
+            width: 842px;
             left: 538px;
             top: -3px;
         }
