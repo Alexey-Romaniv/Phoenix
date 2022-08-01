@@ -1,2 +1,0 @@
-(()=>{const e={openModalBtn:document.querySelector("[data-mobile-menu-open]"),closeModalBtn:document.querySelector("[data-mobile-menu-close]"),modal:document.querySelector("[data-mobile-menu-modal]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})(),$("document").ready((function(){$("#button").on("click",(function(){$("input[required]").addClass("req")}))}));
-//# sourceMappingURL=index.e3c773c8.js.map
