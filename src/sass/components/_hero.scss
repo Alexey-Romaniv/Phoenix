@@ -96,6 +96,8 @@
     &__btn {
 
         @include mq(mob) {
+                margin-left: auto;
+                margin-right: auto;
                 margin-top: 54px;
                 margin-bottom: 67px;
             }
