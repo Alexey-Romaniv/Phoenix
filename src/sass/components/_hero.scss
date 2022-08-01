@@ -1,6 +1,5 @@
 .hero {
 
-
     &-position {
         position: relative;
     }
@@ -41,13 +40,12 @@
 
 
         @include mq(tab) {
-            margin-right: 402px;
-            margin-top: 4px;
+            width: 320px;
         }
 
         @include mq(desk) {
             font-size: 58px;
-            margin-right: 819px;
+            width: 530px;
         }
 
     }
@@ -96,36 +94,16 @@
     }
 
     &__btn {
-        padding: 14px 1px;
-        text-align: center;
-        font-size: 12px;
-        line-height: calc(15/12);
-        width: 260px; 
-        height: 48px;
-        margin: 50px 10px 54px;
-        font-weight: 700;
-        display: block;
-
-        color: var(--white-color);
-        background-color: var(--accent-color);
-        text-transform: uppercase;
-
-        border: solid rgba(0, 0, 0, 0);
-
-        &:hover,
-        &:focus {
-            background-color: rgba(255, 107, 9, 0.7)
-        }
 
         @include mq(mob) {
-                    margin-left: auto;
-                    margin-right: auto;
+                margin-top: 54px;
+                margin-bottom: 67px;
             }
 
         @include mq(tab) {
-            margin: 45px 446px 124px 0;
-            width: 260px;
-            height: 48px;
+            margin-top: 45px;
+            margin-bottom: 129px;
+            margin-left: 0;
         }
 
         @include mq(desk) {
@@ -139,6 +117,7 @@
 
         @media screen and (min-width: 200px) {
             width: 208px;
+            max-width: none;
             margin: 0 auto;
         }
 
@@ -150,7 +129,7 @@
         }
 
         @include mq(desk) {
-            width: 754px;
+            width: 842px;
             left: 538px;
             top: -3px;
         }
