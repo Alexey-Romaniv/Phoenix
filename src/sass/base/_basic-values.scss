@@ -34,8 +34,8 @@ button {
 .btn {
   text-align: center;
   font-size: 12px;
-  line-height: calc(15/12);
-  width: 260px; 
+  line-height: calc(15 / 12);
+  width: 260px;
   height: 48px;
   font-weight: 700;
 
@@ -55,14 +55,12 @@ button {
     letter-spacing: 0.14em;
   }
 
-
   transition: background-color var(--animation), box-shadow var(--animation);
 
   &:hover,
   &:focus {
-      background-color: #D35F12;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    background-color: #d35f12;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
 
@@ -129,6 +127,6 @@ body {
 .active {
   color: var(--accent-color);
 }
-.no-scroll{
+.no-scroll {
   overflow: hidden;
 }
