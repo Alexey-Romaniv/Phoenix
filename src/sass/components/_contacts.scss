@@ -1,8 +1,17 @@
 .contacts {
   // @extend %section;
-  padding: 55px 0;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  @include mq(tab) {
+    padding-top: 60px;
+    padding-bottom: 68px;
+  }
+  @include mq(desk) {
+    padding-top: 100px;
+    padding-bottom: 62px;
+  }
 
-  max-width: 1366px; // узнать
+  max-width: 1680px; // узнать
   margin-left: auto;
   margin-right: auto;
 
