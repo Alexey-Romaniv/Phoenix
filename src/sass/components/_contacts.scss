@@ -119,6 +119,22 @@
   }
 }
 
+.contacts-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+
+  @include mq(tab) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(desk) {
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+}
+
 // .contacts-form-group {
 //   display: block;
 //   flex-direction: column;
@@ -146,21 +162,6 @@
 //   color: red;
 //   margin-bottom: 50px;
 // }
-
-.contacts-form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 50px;
-
-  @include mq(tab) {
-    margin-bottom: 30px;
-  }
-
-  @include mq(desk) {
-    margin-bottom: 80px;
-  }
-}
 
 .contacts-form-input {
   width: 100%;
@@ -230,7 +231,7 @@
     top: 30%;
   }
 
-  @include mq(tab) {
+  @include mq(desk) {
     top: 30%;
     left: 40px;
     font-size: 20px;
@@ -294,15 +295,18 @@
 
 // базовые стили кнопки переписать
 .btn {
-  //   margin-top: 55px;
-  margin-right: 10px;
-  margin-left: 10px;
+  //   position: relative;
+  //   //   margin-top: 55px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   //   margin-top: 35px;
 
   //   display: inline-flex;
   //   align-items: center;
   height: 48px;
   width: 260px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 12px;
@@ -312,6 +316,15 @@
   text-transform: uppercase;
 
   border: none;
-
   background-color: var(--accent-color);
+
+  @include mq(desk) {
+    height: 70px;
+    width: 354px;
+
+    font-family: inherit;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0.14em;
+  }
 }
