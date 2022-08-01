@@ -18,6 +18,9 @@
   color: var(--white-color);
 }
 .profit {
+  position: relative;
+  z-index: 10;
+
   counter-reset: section;
 
   padding: 35px 22px;
@@ -31,17 +34,17 @@
     margin-bottom: 10px;
 
     font-weight: 700;
-font-size: 14px;
-line-height: 165%;
+    font-size: 14px;
+    line-height: 165%;
 
     content: '\2014  0'counters(section, '');
     color: var(--accent-color);
   }
 }
-@include mq(mob-only){
-.profit__item:not(:last-child) {
-  margin-bottom: 30px;
-}
+@include mq(mob-only) {
+  .profit__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @include mq(tab) {
@@ -64,16 +67,24 @@ line-height: 165%;
   }
 }
 
+@include mq(desk) {
+  .benefits__title {
+    display: none;
+  }
+  .profit {
+    padding: 67px 113px;
 
-@include mq(desk){
-    .benefits__title{
-        display: none;
-    }
-    .profit{
-        padding: 67px 113px;
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+  .profit__item {
+    width: calc((100% - 80px) / 3);
 
-        column-gap: 40px;
-        row-gap: 30px;
+    font-size: 20px;
+    line-height: 1.2;
+    &::before {
+      font-size: 20px;
+      line-height: 1.65;
     }
     .profit__item{
         width: calc((100% - 80px) / 3);
