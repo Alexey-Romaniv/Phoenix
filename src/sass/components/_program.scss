@@ -1,15 +1,16 @@
 .program {
     position: relative;
     background-color: var(--title-color);
+    padding-bottom: 70px;
     
     @include mq(desk){   
         background-image: linear-gradient(var(--white-color), var(--white-color));
         background-size: 100% 3px;
-        background-position: 0 161px;
+        background-position: 0 227px;
         background-repeat: no-repeat;
     }
 
-    // z-index: -2;
+    z-index: -2;
     
 
     &-title {
@@ -28,14 +29,28 @@
     }
 }
 
-.program__img {     
-                @media screen and (min-width: 200px) {
-                    width: 120px;
-                    position: absolute;
-                    bottom: -55px;
-                    right: 0;
+.program{     
+
+
+        &-mob__img {
+            @media screen and (min-width: 767px) {
+                    display: none;
                 }
-        
+            @media screen and (min-width: 200px) {
+                        width: 120px;
+                        position: absolute;
+                        bottom: -42px;
+                        right: -20px;
+                    }
+        }
+
+
+
+        &__img{
+
+                @media screen and (max-width: 767px) {
+                        display: none;
+                    }
                 @include mq(tab) {
                     width: 374px;
                     position: absolute;
@@ -46,18 +61,20 @@
                 @include mq(desk) {
                     width: 672px;
                     position: absolute;
-                    bottom: -344px;
+                    bottom: -314px;
                     left: -184px;
-                    z-index: 1;
+                    z-index: -1;
                 }
             }
 
+        
 
-.program-list {
-    @include mq(tab) {
-            padding-bottom: 97px;
+
+
+
         }
 
+.program-list {
 
     position: relative;
     @include mq(desk) {
