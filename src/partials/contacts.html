@@ -7,44 +7,43 @@
     </h2>
     <h3 class="contacts-subtitle">
       Leave a request for participation in a
-      <span class="active"><br>free lesson</span>. <br>A consultant will contact you and
+      <span class="active">free lesson</span>. A consultant will contact you and
       answer your questions
     </h3>
-      <form class="contacts-form" name="contact-form">
-          <div class="contacts-form-group">
-            <label class="contacts-form-field">
-                  <input
-                    class="contacts-form-input"
-                    name="user-name"
-                    type="text"
-                  
-                   required pattern="^[a-zA-Z]+\s$"
-                   title="Username must be two words separated by space."
-
-                    placeholder="name"
-                  />
-                  <span class="contacts-form-label">Имя&ast;</span>
-                  <!-- <svg class="contacts-form-icon" width="20" height="20">
+    <form class="contacts-form" name="contact-form">
+      <div class="contacts-form-group">
+        <label class="contacts-form-field">
+          <input
+            class="contacts-form-input"
+            name="user-name"
+            type="text"
+            required
+            pattern="^[a-zA-Z]+\s$"
+            title="Username must be two words separated by space."
+            placeholder="name"
+          />
+          <span class="contacts-form-label">Имя&ast;</span>
+          <!-- <svg class="contacts-form-icon" width="20" height="20">
                     <use class="icon-check" href="./img/sprite.svg#icon-check"></use>
                     <use class="icon-alert" href="./img/sprite.svg#icon-alert"></use>
                   </svg> -->
-                  <!-- <span class="message-alert">Minimum two characters</span> -->
-                </label>
-                <label class="contacts-form-field">
-                  <input
-                    class="contacts-form-input"
-                    name="user-phone"
-                    type="tel"
-                    id="user-phone"
-                    required
-                    placeholder="+38066122333 "
-                  />
-                  <span class="contacts-form-label">Телефон&ast;</span>
-                </label>
-
-                 <button class="btn contacts-form-btn" type="submit">I want a free lesson</button>
-            </form>
-          </div>
-
+          <!-- <span class="message-alert">Minimum two characters</span> -->
+        </label>
+        <label class="contacts-form-field">
+          <input
+            class="contacts-form-input"
+            name="user-phone"
+            type="tel"
+            id="user-phone"
+            required
+            placeholder="+38066122333 "
+          />
+          <span class="contacts-form-label">Телефон&ast;</span>
+        </label>
+      </div>
+      <button class="btn contacts-form-btn" type="submit">
+        I want a free lesson
+      </button>
+    </form>
   </div>
 </section>
