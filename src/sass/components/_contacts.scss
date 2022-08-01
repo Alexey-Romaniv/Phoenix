@@ -110,8 +110,13 @@
   margin-right: auto;
   margin-left: auto;
 
-  // padding-right: 20px;
-  // padding-left: 20px;
+  @include mq(tab) {
+    width: 390px;
+  }
+
+  @include mq(desk) {
+    width: 478px;
+  }
 }
 
 // .contacts-form-group {
@@ -127,7 +132,7 @@
 
 .contacts-form-field {
   position: relative;
-  display: block;
+  //   display: block;
 }
 
 // .contacts-form-field:first-child {
@@ -147,6 +152,14 @@
   flex-direction: column;
   gap: 20px;
   margin-bottom: 50px;
+
+  @include mq(tab) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 80px;
+  }
 }
 
 .contacts-form-input {
@@ -165,8 +178,15 @@
 
   outline: transparent;
   transition: border-color var(--animation); //which color of border
-}
 
+  @include mq(desk) {
+    height: 70px;
+    padding-left: 40px;
+
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
 .contacts-form-input:focus,
 .contacts-form-input:not(:placeholder-shown) l {
   border-color: green; // which?
@@ -198,13 +218,24 @@
 
   font-weight: 600;
   font-size: 14px;
-  line-height: calc(17 / 11);
+  line-height: calc(17 / 14);
   letter-spacing: 0.08em;
 
   color: var(--white-color);
 
   transition: color var(--animation);
   transform: var(--animation);
+
+  @include mq(tab) {
+    top: 30%;
+  }
+
+  @include mq(tab) {
+    top: 30%;
+    left: 40px;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
   //   transform-origin: top left; // или убирать наверх совсем слева прямо по краю инпута и не уменьшая буквы
 }
 
