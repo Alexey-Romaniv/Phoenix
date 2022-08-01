@@ -232,33 +232,20 @@
   margin-right: auto;
   margin-left: auto;
 
-  height: 48px;
-  width: 260px;
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: calc(15 / 12);
-  letter-spacing: 0.08em;
-  color: var(--white-color);
-  text-transform: uppercase;
-
+  font-family: inherit;  
   border: none;
-  background-color: var(--accent-color);
 
-  @include mq(desk) {
-    height: 70px;
-    width: 354px;
 
-    font-family: inherit;
-    font-size: 14px;
-    line-height: calc(17 / 14);
-    letter-spacing: 0.14em;
+ 
   }
+<<<<<<< Updated upstream
 }
 <<<<<<< Updated upstream
 .contacts-form-btn::before {
   box-shadow: rgba(255, 107, 9, 0.7);
 }
 =======
+>>>>>>> Stashed changes
+=======
+}
 >>>>>>> Stashed changes
