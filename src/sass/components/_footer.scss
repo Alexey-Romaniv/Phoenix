@@ -47,10 +47,24 @@
     @include mq(tab){
         margin-top: 0px;
         margin-left: auto;
+
+        font-size: 20px;
+        line-height: calc(24/20);
     }
     
     @include mq(desk){
-        margin-left: 295px;
+    font-size: 30px;
+    line-height: calc(37/30);
+    margin-left: 295px;
+    }
+
+    &:focus .footer__tel-svg,
+    &:hover .footer__tel-svg{
+        transform: scale(1.2);
+    }
+    &:focus .footer--tel,
+    &:hover .footer--tel{
+        color: var(--accent-color);
     }
 }
 
@@ -59,6 +73,8 @@
     width:20px; 
     height:20px;
     margin-right: 10px;
+    transform: scale(1);
+    transition: transform var(--animation);
 
     @include mq(tab){
         width:24px; 
@@ -68,11 +84,13 @@
     @include mq(desk){
         width:30px; 
         height:30px;
-        margin-right: 30px;
+        margin-right: 56px;
     } 
 }
 
 .footer--tel{
+    transition: color var(--animation);
+
     @include mq(tab){
         font-weight: 600;
         font-size: 20px;
@@ -109,7 +127,7 @@
 .footer__link{
     display: flex;
     @include mq(tab){
-        &::after{
+        &::before{
             display: flex;
             content: "";
             position: relative;
@@ -117,7 +135,7 @@
             height: 40px;
             background-color: #B9B9B9;
             top: 0;
-            right: 60px;
+            right: 20px;
             margin: 0;
         }
     }
