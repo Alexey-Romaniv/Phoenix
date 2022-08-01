@@ -1,5 +1,6 @@
 .contacts {
   // @extend %section;
+  //   paddings for my section
   padding-top: 55px;
   padding-bottom: 55px;
   @include mq(tab) {
@@ -53,7 +54,6 @@
   }
 }
 .contacts-title {
-  // margin-top: 55px;
   min-width: 280px;
   margin-bottom: 25px;
   margin-right: auto;
@@ -144,33 +144,9 @@
   }
 }
 
-// .contacts-form-group {
-//   display: block;
-//   flex-direction: column;
-//   &:not(:last-child) {
-//     margin-bottom: 20px;
-//   }
-//   // gap: 20px;
-
-//   // margin-bottom: 50px;
-// }
-
 .contacts-form-field {
   position: relative;
-  //   display: block;
 }
-
-// .contacts-form-field:first-child {
-//   background-color: green;
-//   margin-bottom: 20px;
-// }
-
-// .contacts-form-field:last-child {
-//   display: block;
-//   background-color: red;
-//   color: red;
-//   margin-bottom: 50px;
-// }
 
 .contacts-form-input {
   width: 100%;
@@ -187,7 +163,7 @@
   border: 1px solid var(--white-color);
 
   outline: transparent;
-  transition: border-color var(--animation); //which color of border
+  transition: border-color var(--animation);
 
   @include mq(desk) {
     height: 70px;
@@ -197,19 +173,6 @@
     line-height: calc(24 / 20);
   }
 }
-.contacts-form-input:focus,
-.contacts-form-input:not(:placeholder-shown) l {
-  border-color: green; // which?
-}
-
-// .contacts-form-input:required:focus:valid:not(:placeholder-shown),
-// .contacts-form-input:required:valid:not(:placeholder-shown) {
-//   border-color: rgb(0, 109, 0);
-// }
-
-// .contacts-form-input:required:focus:invalid:not(:placeholder-shown) {
-//   border-color: rgb(255, 230, 0);
-// }
 
 .contacts-form-input::placeholder {
   opacity: 1;
@@ -246,73 +209,23 @@
     font-size: 20px;
     line-height: calc(24 / 20);
   }
-  //   transform-origin: top left; // или убирать наверх совсем слева прямо по краю инпута и не уменьшая буквы
 }
 
 .contacts-form-input:focus + .contacts-form-label,
 .contacts-form-input:not(:placeholder-shown) + .contacts-form-label {
-  //   border-color: green; // which?
-  //   color: red;
   transform: translateY(-31px) translateX(-28px) scale(0.9);
+
+  @include mq(desk) {
+    transform: translateY(-48px) translateX(-40px) scale(0.9);
+  }
 }
 
-// .icon-alert {
-//   opacity: 0;
-//   fill: rgb(255, 230, 0);
-//   transition: opacity var(--anim-fast);
-// }
-// /* невалідні дані */
-// .contacts-form-input:required:focus:invalid:not(:placeholder-shown)
-//   ~ .contacts-form-icon
-//   .icon-alert {
-//   opacity: 1;
-// }
-// /* валідні дані */
-// .contacts-form-input:required:focus:valid:not(:placeholder-shown)
-//   ~ .contacts-form-icon
-//   .icon-check,
-// .contacts-form-input:required:valid:not(:placeholder-shown)
-//   ~ .contacts-form-icon
-//   .icon-check {
-//   opacity: 1;
-// }
-
-// .message-alert {
-//   position: absolute;
-//   bottom: -18px;
-//   left: 0;
-//   font-weight: 600;
-//   font-size: 11px;
-//   line-height: calc(15 / 11);
-//   letter-spacing: 0.1em;
-//   color: rgb(255, 230, 0);
-
-//   opacity: 0;
-//   transition: opacity var(--anim-fast);
-// }
-
-// .contacts-form-input:required:focus:invalid:not(:placeholder-shown)
-//   ~ .message-alert {
-//   opacity: 1;
-// }
-
-// .contacts-form-message {
-//   position: relative;
-//   display: block;
-//   margin-bottom: 44px;
-// }
-
 // базовые стили кнопки переписать
-.btn {
-  //   position: relative;
-  //   //   margin-top: 55px;
+.contacts-form-btn {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  //   margin-top: 35px;
 
-  //   display: inline-flex;
-  //   align-items: center;
   height: 48px;
   width: 260px;
 

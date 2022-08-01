@@ -3,7 +3,6 @@
     <h2 class="contacts-title">
       Registration for a <span class="active">free</span> phone
       <span class="active">consultation</span> on the nuances of English UPE
-      <!-- <span class="uppercase">UPE</span> -->
     </h2>
     <h3 class="contacts-subtitle">
       Leave a request for participation in a
@@ -17,17 +16,12 @@
             class="contacts-form-input"
             name="user-name"
             type="text"
+            placeholder=" "
             required
-            pattern="^[a-zA-Z]+\s$"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
             title="Username must be two words separated by space."
-            placeholder="name"
           />
           <span class="contacts-form-label">Имя&ast;</span>
-          <!-- <svg class="contacts-form-icon" width="20" height="20">
-                    <use class="icon-check" href="./img/sprite.svg#icon-check"></use>
-                    <use class="icon-alert" href="./img/sprite.svg#icon-alert"></use>
-                  </svg> -->
-          <!-- <span class="message-alert">Minimum two characters</span> -->
         </label>
         <label class="contacts-form-field">
           <input
@@ -35,8 +29,12 @@
             name="user-phone"
             type="tel"
             id="user-phone"
+            placeholder=" "
             required
-            placeholder="+38066122333 "
+            minlength="10"
+            maxlength="13"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            title="Please input number "
           />
           <span class="contacts-form-label">Телефон&ast;</span>
         </label>
