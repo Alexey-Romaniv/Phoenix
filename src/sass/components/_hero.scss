@@ -104,18 +104,20 @@
         height: 48px;
         margin: 50px 10px 54px;
         font-weight: 700;
-        display: block;
 
         color: var(--white-color);
         background-color: var(--accent-color);
         text-transform: uppercase;
-
         border: solid rgba(0, 0, 0, 0);
 
         &:hover,
         &:focus {
-            background-color: #FF6B09;
+            background-color: #D35F12;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition-duration: 300ms
+        }
+        &:visited {
+            background-color: red;
         }
 
         @include mq(mob) {
