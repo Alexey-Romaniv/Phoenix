@@ -5,29 +5,32 @@
   width: 100%;
   z-index: 100;
 
-  background-color: #ffffff;
-
   -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
   -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
   box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
-
+.header--no-transparency{
+  background-color: #ffffff40;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
 .header-container {
   justify-content: start;
   align-items: center;
   display: flex;
 
-  padding: 15px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .menu-mobile__wrapper {
   justify-content: start;
   align-items: center;
   display: flex;
 
-  padding-top: 30px;
+  padding-top: 20px;
 
-  max-width: 728px;
-  margin: 0 auto;
+  // max-width: 728px;
+  // margin: 0 auto;
 }
 
 .header-logo__icon {
@@ -58,10 +61,17 @@
   line-height: calc(17 / 14);
   text-transform: uppercase;
   color: var(--main-text-color);
+
+  &:hover,
+  &:focus{
+    color: var(--accent-color);
+  }
 }
 
 .call-back-btn {
   display: none;
+  justify-content: center;
+  align-items: center;
 
   font-weight: 700;
 
@@ -70,20 +80,22 @@
   width: 260px;
   height: 48px;
   color: var(--accent-color);
-  background-color: transparent;
   border: 2px solid var(--accent-color);
 }
 .menu__button {
   margin-left: auto;
+  &:hover,
+  &:focus{
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
   @include mq(tab) {
-    display: block;
+    display: flex;
   }
   @include mq(desk) {
     margin-left: 60px;
   }
 }
-// .menu__link{
-// }
 
 .menu-mobile__btn {
   display: block;
@@ -115,6 +127,7 @@
 .menu-mobile.is-hidden {
   transform: translateX(100%);
 }
+
 .menu-mobile {
   position: fixed;
   top: 0;
@@ -122,9 +135,10 @@
   width: 100%;
   height: 100%;
 
-  padding: 0 20px;
-  // z-index: 100;
+  z-index: 9999;
+
   background: rgba(17, 21, 24, 0.9);
+  
   transform: translateX(0);
   transition: transform var(--animation);
 
@@ -152,7 +166,8 @@
 
   color: var(--white-color);
 
-  &.active {
+  &:hover,
+  &:focus {
     color: var(--accent-color);
   }
 
@@ -162,14 +177,18 @@
 }
 
 .mobile-menu__button {
-  display: block;
+  display: flex;
 
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.08em;
 
   margin-left: 10px;
-
+  &:hover,
+  &:focus{
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
   @include mq(tab) {
     display: none;
   }
