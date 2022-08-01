@@ -9,10 +9,7 @@
         background-position: 0 227px;
         background-repeat: no-repeat;
     }
-
-    z-index: -2;
     
-
     &-title {
         color: var(--white-color);
         text-align: center;
@@ -30,8 +27,6 @@
 }
 
 .program{     
-
-
         &-mob__img {
             @media screen and (min-width: 767px) {
                     display: none;
@@ -43,8 +38,6 @@
                         right: -20px;
                     }
         }
-
-
 
         &__img{
 
@@ -63,15 +56,9 @@
                     position: absolute;
                     bottom: -314px;
                     left: -184px;
-                    z-index: -1;
+                    z-index: 1;
                 }
             }
-
-        
-
-
-
-
         }
 
 .program-list {
@@ -126,14 +113,11 @@
             position: absolute;
             top: auto;
             left: auto;
-            transform: translateY(-500%);
+            transform: translateY(-490%);
             width: 12px;
             height: 12px;
             background-color: var(--accent-color);
             border-radius: 50%;
-
-
-
         }
     }
 
@@ -153,8 +137,6 @@
             line-height: calc(28/30);
             letter-spacing: 0.08em;
         }
-
-
     }
 
     &__headline {
