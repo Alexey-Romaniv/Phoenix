@@ -182,7 +182,7 @@
 
 .contacts-form-input::placeholder {
   opacity: 0;
-  transition: opacity var(--animation) 50ms;
+  transition: opacity var(--animation);
 }
 
 .contacts-form-input:focus::placeholder {
@@ -202,8 +202,9 @@
 
   color: var(--white-color);
 
-  transition: color var(--animation);
-  transform: var(--animation);
+  transition: 250ms var(--animation);
+  transform: 250ms var(--animation);
+  transform-origin: top left;
 
   @include mq(tab) {
     top: 30%;
