@@ -114,7 +114,8 @@
 
         &:hover,
         &:focus {
-            background-color: rgba(255, 107, 9, 0.7)
+            background-color: #FF6B09;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
 
         @include mq(mob) {
