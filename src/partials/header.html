@@ -1,17 +1,17 @@
-<header class="header">
+<header class="header" id="header">
   <div class="container header-container">
-    <div class="header-logo">
+    <a href="#" class="header-logo">
       <svg class="header-logo__icon">
         <use href="./images/sprite.svg#logo-black"></use>
       </svg>
-    </div>
-    <nav class="menu">
+    </a>
+    <nav class="menu nav-scroll">
       <ul class="menu__list">
         <li class="menu__item">
           <a href="#" class="menu__link">Studying program</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link active">about</a>
+          <a href="#about" class="menu__link active">about</a>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">training options</a>
@@ -21,9 +21,11 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="menu__button call-back-btn">
-      consultation by phone
-    </button>
+
+    <a href="tel:+38000000000" class="menu__button call-back-btn"
+      >consultation by phone</a
+    >
+
     <button
       type="button"
       class="menu-mobile__btn menu-mobile__btn-open"
@@ -33,40 +35,42 @@
         <use href="./images/sprite.svg#menu-open"></use>
       </svg>
     </button>
-    <div class="menu-mobile is-hidden" data-mobile-menu-modal>
-      <div class="menu-mobile__wrapper">
-        <div class="header-logo">
-          <svg class="header-logo__icon">
-            <use href="./images/sprite.svg#logo-white"></use>
-          </svg>
+    <div class="menu-mobile is-hidden" id="menu-mobile" data-mobile-menu-modal>
+      <div class="container">
+        <div class="menu-mobile__wrapper">
+          <a href="#" class="header-logo">
+            <svg class="header-logo__icon">
+              <use href="./images/sprite.svg#logo-white"></use>
+            </svg>
+          </a>
+          <button
+            type="button"
+            class="menu-mobile__btn menu-mobile__btn-close"
+            data-mobile-menu-close
+          >
+            <svg class="menu-mobile__icon menu-mobile__icon-close">
+              <use href="./images/sprite.svg#menu-close"></use>
+            </svg>
+          </button>
         </div>
-        <button
-          type="button"
-          class="menu-mobile__btn menu-mobile__btn-close"
-          data-mobile-menu-close
-        >
-          <svg class="menu-mobile__icon menu-mobile__icon-close">
-            <use href="./images/sprite.svg#menu-close"></use>
-          </svg>
-        </button>
+        <ul class="mobile-menu__list nav-scroll">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Studying program</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#about" class="mobile-menu__link">About</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Training options</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Contacts</a>
+          </li>
+        </ul>
+        <a href="tel:+38000000000" class="mobile-menu__button call-back-btn">
+          consultation by phone
+        </a>
       </div>
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">Studying program</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link active">About</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">Training options</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">Contacts</a>
-        </li>
-      </ul>
-      <button type="button" class="mobile-menu__button call-back-btn">
-        consultation by phone
-      </button>
     </div>
   </div>
 </header>
