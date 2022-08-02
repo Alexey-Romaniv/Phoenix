@@ -121,16 +121,16 @@
 }
 
 .contacts-form {
-  width: 280px;
+  max-width: 280px;
   margin-right: auto;
   margin-left: auto;
 
   @include mq(tab) {
-    width: 390px;
+    max-width: 390px;
   }
 
   @include mq(desk) {
-    width: 478px;
+    max-width: 478px;
   }
 }
 
@@ -181,8 +181,8 @@
 }
 
 .contacts-form-input::placeholder {
-  opacity: 1;
-  transition: opacity var(--animation) 50ms;
+  opacity: 0;
+  transition: opacity var(--animation);
 }
 
 .contacts-form-input:focus::placeholder {
@@ -202,8 +202,9 @@
 
   color: var(--white-color);
 
-  transition: color var(--animation);
-  transform: var(--animation);
+  // transform: var(--animation);
+  transform-origin: top left;
+  transition: transform color var(--animation);
 
   @include mq(tab) {
     top: 30%;
@@ -220,39 +221,43 @@
 .contacts-form-input:focus + .contacts-form-label,
 .contacts-form-input:not(:placeholder-shown) + .contacts-form-label {
   transform: translateY(-31px) translateX(-28px) scale(0.9);
+  transition: transform (--animation);
 
   @include mq(desk) {
     transform: translateY(-48px) translateX(-40px) scale(0.9);
   }
 }
 
-// базовые стили кнопки переписать
+.contacts-form-input:valid {
+  border: 1px solid #008000;
+  transition: border-color var(--animation);
+}
+
+.contacts-form-input:invalid:focus:not(:placeholder-shown) {
+  border-color: #ff0000;
+  transition: border-color var(--animation);
+}
+
 .contacts-form-btn {
-  display: block;
+  width: 100%;
+  width: 242px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
 
-  height: 48px;
-  width: 260px;
-
   font-family: inherit;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: calc(15 / 12);
-  letter-spacing: 0.08em;
-  color: var(--white-color);
-  text-transform: uppercase;
-
   border: none;
-  background-color: var(--accent-color);
-
-  @include mq(desk) {
-    height: 70px;
-    width: 354px;
-
-    font-family: inherit;
-    font-size: 14px;
-    line-height: calc(17 / 14);
-    letter-spacing: 0.14em;
-  }
 }
+// <<<<<<< Updated upstream
+// }
+// <<<<<<< Updated upstream
+// .contacts-form-btn::before {
+//   box-shadow: rgba(255, 107, 9, 0.7);
+// }
+// =======
+// >>>>>>> Stashed changes
+// =======
+// }
+// >>>>>>> Stashed changes
