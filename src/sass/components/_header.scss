@@ -9,7 +9,7 @@
   -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
   box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
-.header--no-transparency{
+.header--no-transparency {
   background-color: #ffffff40;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
@@ -28,9 +28,6 @@
   display: flex;
 
   padding-top: 20px;
-
-  // max-width: 728px;
-  // margin: 0 auto;
 }
 
 .header-logo__icon {
@@ -63,7 +60,7 @@
   color: var(--main-text-color);
 
   &:hover,
-  &:focus{
+  &:focus {
     color: var(--accent-color);
   }
 }
@@ -86,7 +83,7 @@
 .menu__button {
   margin-left: auto;
   &:hover,
-  &:focus{
+  &:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
   }
@@ -142,7 +139,7 @@
   z-index: 9999;
 
   background: rgba(17, 21, 24, 0.9);
-  
+
   transform: translateX(0);
   transition: transform var(--animation);
 
@@ -189,7 +186,7 @@
 
   margin-left: 10px;
   &:hover,
-  &:focus{
+  &:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
   }
