@@ -202,9 +202,8 @@
 
   color: var(--white-color);
 
-  // transform: var(--animation);
   transform-origin: top left;
-  transition: transform color var(--animation);
+  transition: transform-origin var(--animation);
 
   @include mq(tab) {
     top: 30%;
@@ -249,7 +248,17 @@
 
   font-family: inherit;
   border: none;
+
+  @include mq(mob) {
+    width: 260px;
+  }
+
+  @include mq(desk) {
+    width: 354px;
+    height: 70px;
+  }
 }
+
 // <<<<<<< Updated upstream
 // }
 // <<<<<<< Updated upstream
