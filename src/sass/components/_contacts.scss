@@ -121,6 +121,7 @@
 }
 
 .contacts-form {
+  width: 100%;
   max-width: 280px;
   margin-right: auto;
   margin-left: auto;
@@ -202,8 +203,8 @@
 
   color: var(--white-color);
 
-  transform-origin: top left;
-  transition: transform-origin var(--animation);
+  transform: top left;
+  transition: transform var(--animation);
 
   @include mq(tab) {
     top: 30%;
@@ -239,7 +240,6 @@
 
 .contacts-form-btn {
   width: 100%;
-  width: 242px;
   display: flex;
   align-items: center;
   justify-content: center;
