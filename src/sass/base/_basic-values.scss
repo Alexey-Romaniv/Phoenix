@@ -124,6 +124,11 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.main {
+  overflow: hidden;
+}
+
 .active {
   color: var(--accent-color);
 }
