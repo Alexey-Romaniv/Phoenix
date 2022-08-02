@@ -250,6 +250,7 @@
 
   font-family: inherit;
   border: none;
+<<<<<<< Updated upstream
 
   @include mq(mob) {
     width: 260px;
@@ -260,3 +261,17 @@
     height: 70px;
   }
 }
+=======
+}
+// <<<<<<< Updated upstream
+// }
+// <<<<<<< Updated upstream
+// .contacts-form-btn::before {
+//   box-shadow: rgba(255, 107, 9, 0.7);
+// }
+// =======
+// >>>>>>> Stashed changes
+// =======
+// }
+// >>>>>>> Stashed changes
+>>>>>>> Stashed changes
