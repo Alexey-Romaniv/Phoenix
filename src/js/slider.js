@@ -31,3 +31,18 @@ $(document).ready(function () {
     asNavFor: '.reviews__slider-big',
   });
 });
+
+// -----------------------------
+
+$('.show').click(function () {
+  $('.read-more-target').show(250);
+  $('.hide').show(250);
+  $('.dots').hide(250);
+  $('.show').hide(250);
+});
+$('.hide').click(function () {
+  $('.read-more-target').hide(250);
+  $('.hide').hide(250);
+  $('.dots').show(250);
+  $('.show').show(250);
+});
