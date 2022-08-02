@@ -182,7 +182,7 @@
 
 .contacts-form-input::placeholder {
   opacity: 0;
-  transition: opacity var(--animation) 50ms;
+  transition: opacity var(--animation);
 }
 
 .contacts-form-input:focus::placeholder {
@@ -202,9 +202,9 @@
 
   color: var(--white-color);
 
-  transition: color var(--animation);
-  transform: var(--animation);
+  // transform: var(--animation);
   transform-origin: top left;
+  transition: transform color var(--animation);
 
   @include mq(tab) {
     top: 30%;
@@ -225,7 +225,6 @@
 
   @include mq(desk) {
     transform: translateY(-48px) translateX(-40px) scale(0.9);
-    transition: transform var(--animation);
   }
 }
 
@@ -250,18 +249,6 @@
 
   font-family: inherit;
   border: none;
-<<<<<<< Updated upstream
-
-  @include mq(mob) {
-    width: 260px;
-  }
-
-  @include mq(desk) {
-    width: 354px;
-    height: 70px;
-  }
-}
-=======
 }
 // <<<<<<< Updated upstream
 // }
@@ -274,4 +261,3 @@
 // =======
 // }
 // >>>>>>> Stashed changes
->>>>>>> Stashed changes
