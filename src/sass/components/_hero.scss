@@ -1,8 +1,11 @@
 .hero {
 
-
     &-position {
-        position: relative;
+        display: flex;
+        @media screen and (max-width: 767px) {
+                display: block;
+            }
+
     }
     @media screen and (max-width: 767px) {
         padding-top: 93px;
@@ -37,17 +40,13 @@
         line-height: 1.3;
         letter-spacing: 0.03em;
 
-
-
-
         @include mq(tab) {
-            margin-right: 402px;
-            margin-top: 4px;
+            width: 320px;
         }
 
         @include mq(desk) {
             font-size: 58px;
-            margin-right: 819px;
+            width: 530px;
         }
 
     }
@@ -59,11 +58,11 @@
         line-height: calc(22/14);
         align-items: center;
 
-        &__item:nth-child(1) {
+        &__item:nth-child(2) {
             font-weight: 500;
             color: var(--main-text-color);
 
-            @media screen and (min-width: 1680px) {
+            @media screen and (min-width: 1366px) {
                 font-size: 20px;
                 ;
             }
@@ -93,39 +92,24 @@
             }
         }
 
+        &__mob {
+            @media screen and (max-width: 767px) {
+                text-align: center;
+            }
+        }
     }
 
     &__btn {
-        padding: 14px 1px;
-        text-align: center;
-        font-size: 12px;
-        line-height: calc(15/12);
-        width: 260px; 
-        height: 48px;
-        margin: 50px 10px 54px;
-        font-weight: 700;
-        display: block;
 
-        color: var(--white-color);
-        background-color: var(--accent-color);
-        text-transform: uppercase;
-
-        border: solid rgba(0, 0, 0, 0);
-
-        &:hover,
-        &:focus {
-            background-color: rgba(255, 107, 9, 0.7)
-        }
-
-        @include mq(mob) {
-                    margin-left: auto;
-                    margin-right: auto;
+        @media screen and (max-width: 767px) {
+                margin-top: 54px;
+                margin-bottom: 67px;
             }
 
         @include mq(tab) {
-            margin: 45px 446px 124px 0;
-            width: 260px;
-            height: 48px;
+            margin-top: 45px;
+            margin-bottom: 129px;
+            margin-left: 0;
         }
 
         @include mq(desk) {
@@ -137,22 +121,25 @@
 
     &__img {
 
-        @media screen and (min-width: 200px) {
+        @media screen and (max-width: 767px) {
             width: 208px;
+            max-width: none;
             margin: 0 auto;
         }
 
         @include mq(tab) {
             width: 370px;
-            left: 308px;
-            top: -3px;
-            position: absolute;
+            height: 315px;
+            margin-left: 18px;
+            margin-top: -4px;
+
         }
 
         @include mq(desk) {
-            width: 754px;
-            left: 538px;
-            top: -3px;
+            width: 842px;
+            height: 718px;
+            margin-top: -55px;
+            margin-left: 50px;
         }
 
     }

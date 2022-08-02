@@ -219,7 +219,7 @@
 .reviews__slider-small--item.slick-slide.slick-current.slick-active {
   @include mq(tab) {
     border-radius: 50%;
-    outline: 1px solid #ff6b09;
+    outline: 3px solid #ff6b09;
   }
 }
 .reviews__slider-small .slick-arrow {
