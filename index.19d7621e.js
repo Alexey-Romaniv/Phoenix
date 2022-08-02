@@ -1,0 +1,2 @@
+window.onscroll=()=>function(){const e=document.getElementById("header"),t=e.offsetTop;window.pageYOffset>t?e.classList.add("header--no-transparency"):e.classList.remove("header--no-transparency")}(),$(document).ready((function(){$(".nav-scroll").on("click","a",(function(e){e.preventDefault();var t=$(this).attr("href"),n=$(t).offset().top;$("body,html").animate({scrollTop:n},1500),document.documentElement.clientWidth}))}));
+//# sourceMappingURL=index.19d7621e.js.map
